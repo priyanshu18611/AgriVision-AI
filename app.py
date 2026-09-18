@@ -1,23 +1,25 @@
-from flask import Flask, jsonify
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def home():
-    return jsonify({
-        "project": "AgriVision AI",
-        "status": "running",
-        "message": "AI Plant Disease Detection System"
-    })
+    return render_template("index.html")
 
 
 @app.route("/health")
 def health():
-    return jsonify({
-        "status": "healthy"
-    })
+    return {
+        "status": "healthy",
+        "project": "AgriVision AI",
+        "version": "1.0"
+    }
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(
+        host="0.0.0.0",
+        port=5000,
+        debug=True
+    )
