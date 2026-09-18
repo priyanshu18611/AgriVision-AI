@@ -7,56 +7,118 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+          content="AgriVision AI - AI-powered plant disease detection and crop health monitoring">
+
     <title>AgriVision AI | Plant Health Intelligence</title>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             background: #06130b;
-            color: white;
+            color: #ffffff;
             min-height: 100vh;
         }
+
+        /* ================= NAVBAR ================= */
 
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 7%;
+
+            padding: 18px 7%;
+
             border-bottom: 1px solid #183b25;
-            background: #081a10;
+
+            background: rgba(4, 18, 10, 0.95);
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            backdrop-filter: blur(15px);
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
 
         .logo {
             font-size: 24px;
             font-weight: bold;
+            white-space: nowrap;
         }
 
         .logo span {
             color: #55e889;
         }
 
+        /* Creator Tag */
+
+        .creator-tag {
+            padding: 6px 11px;
+
+            border: 1px solid rgba(85, 232, 137, 0.35);
+
+            border-radius: 20px;
+
+            background: rgba(85, 232, 137, 0.08);
+
+            color: #8cf0a9;
+
+            font-size: 9px;
+
+            letter-spacing: 1px;
+
+            font-weight: bold;
+
+            white-space: nowrap;
+
+            box-shadow:
+                0 0 15px rgba(85, 232, 137, 0.08);
+        }
+
         nav a {
             color: #b8cabe;
             text-decoration: none;
             margin-left: 25px;
+            transition: 0.3s;
         }
+
+        nav a:hover {
+            color: #55e889;
+        }
+
+        /* ================= HERO ================= */
 
         .hero {
             min-height: 650px;
+
             display: flex;
             justify-content: center;
             align-items: center;
+
             text-align: center;
+
             padding: 70px 20px;
+
             background:
                 radial-gradient(
-                    circle,
+                    circle at center,
                     rgba(53, 180, 91, 0.20),
                     transparent 50%
                 );
@@ -68,17 +130,27 @@
 
         .badge {
             display: inline-block;
+
             padding: 9px 18px;
+
             border: 1px solid #2c7042;
+
             border-radius: 30px;
+
             color: #73e99a;
+
             font-size: 13px;
+
             margin-bottom: 25px;
+
+            background: rgba(85, 232, 137, 0.05);
         }
 
         h1 {
             font-size: clamp(45px, 8vw, 82px);
+
             line-height: 1.05;
+
             margin-bottom: 25px;
         }
 
@@ -88,19 +160,41 @@
 
         .hero p {
             color: #aebdb3;
+
             font-size: 18px;
+
             line-height: 1.7;
+
             max-width: 680px;
+
             margin: auto;
         }
 
+        /* ================= UPLOAD ================= */
+
         .upload-box {
             margin: 40px auto 0;
+
             max-width: 600px;
+
             padding: 35px;
+
             border: 1px dashed #39784d;
+
             border-radius: 22px;
-            background: rgba(255,255,255,0.04);
+
+            background: rgba(255, 255, 255, 0.04);
+
+            transition: 0.3s;
+        }
+
+        .upload-box:hover {
+            border-color: #55e889;
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 15px 40px rgba(0, 0, 0, 0.25);
         }
 
         .upload-box h2 {
@@ -114,39 +208,67 @@
 
         input[type="file"] {
             width: 100%;
+
             padding: 15px;
+
             color: #cfe5d5;
+
             background: #0c2114;
+
             border-radius: 12px;
+
             border: 1px solid #214b2e;
+
+            cursor: pointer;
         }
+
+        /* ================= FEATURES ================= */
 
         .features {
             padding: 80px 7%;
+
             text-align: center;
         }
 
         .features h2 {
             font-size: 36px;
+
             margin-bottom: 40px;
         }
 
         .grid {
             display: grid;
+
             grid-template-columns:
                 repeat(auto-fit, minmax(210px, 1fr));
+
             gap: 20px;
         }
 
         .card {
             padding: 30px 20px;
+
             border: 1px solid #183b25;
+
             border-radius: 20px;
+
             background: #0a1d11;
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+
+            border-color: #39784d;
+
+            box-shadow:
+                0 15px 40px rgba(0, 0, 0, 0.25);
         }
 
         .icon {
             font-size: 40px;
+
             margin-bottom: 15px;
         }
 
@@ -156,20 +278,50 @@
 
         .card p {
             color: #9eafa4;
+
             line-height: 1.6;
         }
 
+        /* ================= FOOTER ================= */
+
         footer {
             padding: 30px;
+
             text-align: center;
+
             color: #718279;
+
             border-top: 1px solid #183b25;
         }
+
+        .footer-name {
+            color: #55e889;
+
+            font-weight: bold;
+        }
+
+        /* ================= MOBILE ================= */
 
         @media (max-width: 600px) {
 
             nav {
-                padding: 18px 20px;
+                padding: 15px 18px;
+            }
+
+            .brand {
+                gap: 8px;
+            }
+
+            .logo {
+                font-size: 19px;
+            }
+
+            .creator-tag {
+                font-size: 7px;
+
+                padding: 5px 8px;
+
+                letter-spacing: 0.7px;
             }
 
             nav div:last-child {
@@ -183,52 +335,115 @@
             .hero {
                 min-height: 600px;
             }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .upload-box {
+                padding: 28px 18px;
+            }
+
+            .features {
+                padding: 65px 20px;
+            }
+
+            .features h2 {
+                font-size: 30px;
+            }
         }
+
     </style>
+
 </head>
+
 
 <body>
 
+
+    <!-- ================= NAVBAR ================= -->
+
     <nav>
-        <div class="logo">
-            🌱 AgriVision <span>AI</span>
+
+        <div class="brand">
+
+            <div class="logo">
+                🌱 AgriVision <span>AI</span>
+            </div>
+
+            <div class="creator-tag">
+                BY PRIYANSHU KUMAR
+            </div>
+
         </div>
+
 
         <div>
-            <a href="/">Home</a>
-            <a href="#features">Features</a>
+
+            <a href="/">
+                Home
+            </a>
+
+            <a href="#features">
+                Features
+            </a>
+
         </div>
+
     </nav>
 
+
+    <!-- ================= HERO ================= -->
 
     <section class="hero">
 
         <div class="hero-content">
 
+
             <div class="badge">
                 🤖 AI-POWERED AGRICULTURE
             </div>
 
+
             <h1>
+
                 Plant Health
-                <span>Intelligence</span>
+
+                <span>
+                    Intelligence
+                </span>
+
             </h1>
 
+
             <p>
-                Detect plant diseases using Artificial Intelligence
-                and Computer Vision. Upload a leaf image and
+
+                Detect plant diseases using
+                Artificial Intelligence and
+                Computer Vision.
+
+                Upload a leaf image and
                 analyze crop health instantly.
+
             </p>
 
 
+            <!-- ================= UPLOAD ================= -->
+
             <div class="upload-box">
 
-                <h2>🌿 Analyze Your Plant</h2>
+                <h2>
+                    🌿 Analyze Your Plant
+                </h2>
+
 
                 <p>
-                    Upload a clear image of a plant leaf
-                    to begin AI analysis.
+
+                    Upload a clear image of a
+                    plant leaf to begin AI analysis.
+
                 </p>
+
 
                 <input
                     type="file"
@@ -237,61 +452,129 @@
 
             </div>
 
+
         </div>
 
     </section>
 
 
-    <section class="features" id="features">
+    <!-- ================= FEATURES ================= -->
 
-        <h2>AI-Powered Features</h2>
+    <section
+        class="features"
+        id="features"
+    >
+
+        <h2>
+            AI-Powered Features
+        </h2>
+
 
         <div class="grid">
 
-            <div class="card">
-                <div class="icon">🤖</div>
-                <h3>AI Detection</h3>
-                <p>
-                    Identify plant diseases using
-                    computer vision and deep learning.
-                </p>
-            </div>
 
             <div class="card">
-                <div class="icon">📊</div>
-                <h3>Confidence Score</h3>
+
+                <div class="icon">
+                    🤖
+                </div>
+
+                <h3>
+                    AI Detection
+                </h3>
+
                 <p>
-                    View the AI model's prediction
-                    confidence.
+
+                    Identify plant diseases
+                    using computer vision
+                    and deep learning.
+
                 </p>
+
             </div>
 
-            <div class="card">
-                <div class="icon">🌱</div>
-                <h3>Crop Health</h3>
-                <p>
-                    Analyze the health condition
-                    of your plant.
-                </p>
-            </div>
 
             <div class="card">
-                <div class="icon">💡</div>
-                <h3>Smart Guidance</h3>
+
+                <div class="icon">
+                    📊
+                </div>
+
+                <h3>
+                    Confidence Score
+                </h3>
+
                 <p>
-                    Receive useful information for
-                    managing detected diseases.
+
+                    View the AI model's
+                    prediction confidence.
+
                 </p>
+
             </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    🌱
+                </div>
+
+                <h3>
+                    Crop Health
+                </h3>
+
+                <p>
+
+                    Analyze the health
+                    condition of your plant.
+
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    💡
+                </div>
+
+                <h3>
+                    Smart Guidance
+                </h3>
+
+                <p>
+
+                    Receive useful information
+                    for managing detected diseases.
+
+                </p>
+
+            </div>
+
 
         </div>
 
     </section>
 
 
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-        © 2026 AgriVision AI — Intelligent Agriculture
+
+        © 2026 AgriVision AI
+
+        &nbsp; | &nbsp;
+
+        Developed by
+
+        <span class="footer-name">
+            Priyanshu Kumar
+        </span>
+
     </footer>
+
 
 </body>
 
