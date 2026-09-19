@@ -421,6 +421,61 @@
         }
 
 
+        <!-- ================= PREDICTION HISTORY ================= -->
+
+<section
+    id="history"
+    style="
+        padding:70px 7%;
+        text-align:center;
+    "
+>
+
+    <h2
+        style="
+            font-size:36px;
+            margin-bottom:12px;
+        "
+    >
+        📜 Prediction History
+    </h2>
+
+    <p
+        style="
+            color:#9eafa4;
+            margin-bottom:30px;
+        "
+    >
+        Your recent plant analysis results
+    </p>
+
+
+    <div
+        id="historyList"
+        style="
+            max-width:850px;
+            margin:auto;
+        "
+    ></div>
+
+
+    <button
+        onclick="clearHistory()"
+        style="
+            margin-top:25px;
+            padding:11px 20px;
+            border:1px solid #39784d;
+            border-radius:10px;
+            background:#0a1d11;
+            color:#8cf0a9;
+            cursor:pointer;
+            font-weight:bold;
+        "
+    >
+        🗑️ Clear History
+    </button>
+
+</section>
         /* ================= FOOTER ================= */
 
         footer {
@@ -1186,7 +1241,235 @@
             aiResult.innerHTML = "";
 
         }
+/* ================= PREDICTION HISTORY ================= */
 
+function savePredictionHistory(
+    crop,
+    disease,
+    confidence,
+    status
+) {
+
+    const history =
+        JSON.parse(
+            localStorage.getItem(
+                "agrivision_history"
+            ) || "[]"
+        );
+
+
+    const record = {
+
+        crop: crop,
+
+        disease: formatDiseaseName(
+            disease
+        ),
+
+        confidence:
+            Number(confidence).toFixed(2),
+
+        status: status,
+
+        date:
+            new Date().toLocaleString()
+
+    };
+
+
+    history.unshift(record);
+
+
+    /* Keep latest 10 results */
+
+    const limitedHistory =
+        history.slice(0, 10);
+
+
+    localStorage.setItem(
+        "agrivision_history",
+        JSON.stringify(
+            limitedHistory
+        )
+    );
+
+
+    displayHistory();
+
+}
+
+
+/* ================= DISPLAY HISTORY ================= */
+
+function displayHistory() {
+
+    const historyList =
+        document.getElementById(
+            "historyList"
+        );
+
+
+    if (!historyList) {
+        return;
+    }
+
+
+    const history =
+        JSON.parse(
+            localStorage.getItem(
+                "agrivision_history"
+            ) || "[]"
+        );
+
+
+    if (history.length === 0) {
+
+        historyList.innerHTML = `
+
+            <div
+                style="
+                    padding:30px;
+                    border:1px dashed #39784d;
+                    border-radius:16px;
+                    color:#718279;
+                    background:#0a1d11;
+                "
+            >
+
+                🌱
+
+                <br><br>
+
+                No predictions yet.
+
+                <br>
+
+                Upload a plant image
+                to create your first analysis.
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    historyList.innerHTML =
+        history.map(
+            item => `
+
+                <div
+                    style="
+                        margin-bottom:14px;
+                        padding:20px;
+                        text-align:left;
+                        border:1px solid #183b25;
+                        border-radius:16px;
+                        background:#0a1d11;
+                    "
+                >
+
+                    <div
+                        style="
+                            display:flex;
+                            justify-content:space-between;
+                            gap:15px;
+                            flex-wrap:wrap;
+                        "
+                    >
+
+                        <div>
+
+                            <div
+                                style="
+                                    color:#55e889;
+                                    font-weight:bold;
+                                    font-size:17px;
+                                "
+                            >
+                                🌿 ${escapeHTML(item.crop)}
+                            </div>
+
+                            <div
+                                style="
+                                    margin-top:8px;
+                                    color:#ffffff;
+                                "
+                            >
+                                ${escapeHTML(item.disease)}
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            style="
+                                text-align:right;
+                            "
+                        >
+
+                            <div
+                                style="
+                                    color:#55e889;
+                                    font-size:20px;
+                                    font-weight:bold;
+                                "
+                            >
+                                ${item.confidence}%
+                            </div>
+
+                            <div
+                                style="
+                                    color:#9eafa4;
+                                    font-size:12px;
+                                    margin-top:5px;
+                                "
+                            >
+                                ${escapeHTML(item.status)}
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        style="
+                            margin-top:12px;
+                            color:#718279;
+                            font-size:11px;
+                        "
+                    >
+                        🕒 ${escapeHTML(item.date)}
+                    </div>
+
+                </div>
+
+            `
+        )
+        .join("");
+
+}
+
+
+/* ================= CLEAR HISTORY ================= */
+
+function clearHistory() {
+
+    localStorage.removeItem(
+        "agrivision_history"
+    );
+
+    displayHistory();
+
+}
+
+
+/* ================= LOAD HISTORY ================= */
+
+displayHistory();
     </script>
 
 
