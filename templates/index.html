@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport"
@@ -10,7 +11,11 @@
     <meta name="description"
           content="AgriVision AI - AI-powered plant disease detection and crop health monitoring">
 
+    <meta name="theme-color"
+          content="#06130b">
+
     <title>AgriVision AI | Plant Health Intelligence</title>
+
 
     <style>
 
@@ -20,63 +25,92 @@
             box-sizing: border-box;
         }
 
+
         html {
             scroll-behavior: smooth;
         }
 
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
             background: #06130b;
+
             color: #ffffff;
+
             min-height: 100vh;
         }
+
 
         /* ================= NAVBAR ================= */
 
         nav {
+
             display: flex;
+
             justify-content: space-between;
+
             align-items: center;
 
             padding: 18px 7%;
 
-            border-bottom: 1px solid #183b25;
+            border-bottom:
+                1px solid #183b25;
 
-            background: rgba(4, 18, 10, 0.95);
+            background:
+                rgba(4, 18, 10, 0.96);
 
             position: sticky;
+
             top: 0;
+
             z-index: 1000;
 
             backdrop-filter: blur(15px);
         }
 
+
         .brand {
+
             display: flex;
+
             align-items: center;
+
             gap: 12px;
         }
 
+
         .logo {
+
             font-size: 24px;
+
             font-weight: bold;
+
             white-space: nowrap;
         }
 
+
         .logo span {
+
             color: #55e889;
         }
 
-        /* Creator Tag */
 
         .creator-tag {
+
             padding: 6px 11px;
 
-            border: 1px solid rgba(85, 232, 137, 0.35);
+            border:
+                1px solid
+                rgba(85, 232, 137, 0.35);
 
             border-radius: 20px;
 
-            background: rgba(85, 232, 137, 0.08);
+            background:
+                rgba(85, 232, 137, 0.08);
 
             color: #8cf0a9;
 
@@ -87,29 +121,37 @@
             font-weight: bold;
 
             white-space: nowrap;
-
-            box-shadow:
-                0 0 15px rgba(85, 232, 137, 0.08);
         }
 
+
         nav a {
+
             color: #b8cabe;
+
             text-decoration: none;
+
             margin-left: 25px;
+
             transition: 0.3s;
         }
 
+
         nav a:hover {
+
             color: #55e889;
         }
+
 
         /* ================= HERO ================= */
 
         .hero {
+
             min-height: 650px;
 
             display: flex;
+
             justify-content: center;
+
             align-items: center;
 
             text-align: center;
@@ -117,6 +159,7 @@
             padding: 70px 20px;
 
             background:
+
                 radial-gradient(
                     circle at center,
                     rgba(53, 180, 91, 0.20),
@@ -124,16 +167,23 @@
                 );
         }
 
+
         .hero-content {
+
+            width: 100%;
+
             max-width: 850px;
         }
 
+
         .badge {
+
             display: inline-block;
 
             padding: 9px 18px;
 
-            border: 1px solid #2c7042;
+            border:
+                1px solid #2c7042;
 
             border-radius: 30px;
 
@@ -143,22 +193,30 @@
 
             margin-bottom: 25px;
 
-            background: rgba(85, 232, 137, 0.05);
+            background:
+                rgba(85, 232, 137, 0.05);
         }
 
+
         h1 {
-            font-size: clamp(45px, 8vw, 82px);
+
+            font-size:
+                clamp(45px, 8vw, 82px);
 
             line-height: 1.05;
 
             margin-bottom: 25px;
         }
 
+
         h1 span {
+
             color: #55e889;
         }
 
+
         .hero p {
+
             color: #aebdb3;
 
             font-size: 18px;
@@ -170,43 +228,59 @@
             margin: auto;
         }
 
+
         /* ================= UPLOAD ================= */
 
         .upload-box {
-            margin: 40px auto 0;
+
+            margin:
+                40px auto 0;
 
             max-width: 600px;
 
             padding: 35px;
 
-            border: 1px dashed #39784d;
+            border:
+                1px dashed #39784d;
 
             border-radius: 22px;
 
-            background: rgba(255, 255, 255, 0.04);
+            background:
+                rgba(255, 255, 255, 0.04);
 
             transition: 0.3s;
         }
 
+
         .upload-box:hover {
+
             border-color: #55e889;
 
-            transform: translateY(-3px);
+            transform:
+                translateY(-3px);
 
             box-shadow:
-                0 15px 40px rgba(0, 0, 0, 0.25);
+                0 15px 40px
+                rgba(0, 0, 0, 0.25);
         }
 
+
         .upload-box h2 {
+
             margin-bottom: 10px;
         }
 
+
         .upload-box p {
+
             margin-bottom: 25px;
+
             font-size: 15px;
         }
 
+
         input[type="file"] {
+
             width: 100%;
 
             padding: 15px;
@@ -215,40 +289,223 @@
 
             background: #0c2114;
 
-            border-radius: 12px;
+            border:
+                1px solid #214b2e;
 
-            border: 1px solid #214b2e;
+            border-radius: 12px;
 
             cursor: pointer;
         }
 
+
+        /* ================= RESULT ================= */
+
+        #aiResult {
+
+            margin-top: 25px;
+
+            padding: 25px;
+
+            border:
+                1px solid #39784d;
+
+            border-radius: 18px;
+
+            background: #0a1d11;
+
+            color: #ffffff;
+
+            text-align: center;
+
+            animation:
+                resultAppear 0.5s ease;
+        }
+
+
+        @keyframes resultAppear {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(15px);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
+        }
+
+
+        .result-icon {
+
+            font-size: 45px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .result-title {
+
+            margin: 12px 0;
+
+            font-size: 24px;
+
+            color: #55e889;
+        }
+
+
+        .result-section {
+
+            margin-top: 20px;
+
+            padding: 20px;
+
+            border-radius: 15px;
+
+            background: #06130b;
+        }
+
+
+        .result-label {
+
+            color: #9eafa4;
+
+            margin-bottom: 8px;
+        }
+
+
+        .result-disease {
+
+            margin-bottom: 20px;
+
+            font-size: 22px;
+
+            word-break: break-word;
+        }
+
+
+        .confidence-value {
+
+            color: #55e889;
+
+            font-size: 28px;
+        }
+
+
+        .confidence-bar {
+
+            margin-top: 15px;
+
+            height: 10px;
+
+            background: #183b25;
+
+            border-radius: 10px;
+
+            overflow: hidden;
+        }
+
+
+        .confidence-fill {
+
+            height: 100%;
+
+            background: #55e889;
+
+            border-radius: 10px;
+
+            transition:
+                width 1s ease;
+        }
+
+
+        .health-status {
+
+            margin-top: 20px;
+
+            color: #b8cabe;
+
+            font-size: 16px;
+        }
+
+
+        .reset-button {
+
+            margin-top: 20px;
+
+            padding: 12px 22px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background: #55e889;
+
+            color: #06130b;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+
+        .reset-button:hover {
+
+            transform:
+                translateY(-2px);
+
+            box-shadow:
+                0 8px 20px
+                rgba(85, 232, 137, 0.2);
+        }
+
+
         /* ================= FEATURES ================= */
 
         .features {
+
             padding: 80px 7%;
 
             text-align: center;
         }
 
+
         .features h2 {
+
             font-size: 36px;
 
             margin-bottom: 40px;
         }
 
+
         .grid {
+
             display: grid;
 
             grid-template-columns:
-                repeat(auto-fit, minmax(210px, 1fr));
+                repeat(
+                    auto-fit,
+                    minmax(210px, 1fr)
+                );
 
             gap: 20px;
         }
 
+
         .card {
+
             padding: 30px 20px;
 
-            border: 1px solid #183b25;
+            border:
+                1px solid #183b25;
 
             border-radius: 20px;
 
@@ -257,66 +514,91 @@
             transition: 0.3s;
         }
 
-        .card:hover {
-            transform: translateY(-7px);
 
-            border-color: #39784d;
+        .card:hover {
+
+            transform:
+                translateY(-7px);
+
+            border-color:
+                #39784d;
 
             box-shadow:
-                0 15px 40px rgba(0, 0, 0, 0.25);
+                0 15px 40px
+                rgba(0, 0, 0, 0.25);
         }
 
+
         .icon {
+
             font-size: 40px;
 
             margin-bottom: 15px;
         }
 
+
         .card h3 {
+
             margin-bottom: 10px;
         }
 
+
         .card p {
+
             color: #9eafa4;
 
             line-height: 1.6;
         }
 
+
         /* ================= FOOTER ================= */
 
         footer {
+
             padding: 30px;
 
             text-align: center;
 
             color: #718279;
 
-            border-top: 1px solid #183b25;
+            border-top:
+                1px solid #183b25;
         }
 
+
         .footer-name {
+
             color: #55e889;
 
             font-weight: bold;
         }
+
 
         /* ================= MOBILE ================= */
 
         @media (max-width: 600px) {
 
             nav {
-                padding: 15px 18px;
+
+                padding:
+                    15px 18px;
             }
 
+
             .brand {
+
                 gap: 8px;
             }
 
+
             .logo {
+
                 font-size: 19px;
             }
 
+
             .creator-tag {
+
                 font-size: 7px;
 
                 padding: 5px 8px;
@@ -324,33 +606,56 @@
                 letter-spacing: 0.7px;
             }
 
+
             nav div:last-child {
+
                 display: none;
             }
 
+
             h1 {
+
                 font-size: 48px;
             }
 
+
             .hero {
+
                 min-height: 600px;
             }
 
+
             .hero p {
+
                 font-size: 16px;
             }
 
+
             .upload-box {
-                padding: 28px 18px;
+
+                padding:
+                    28px 18px;
             }
+
 
             .features {
-                padding: 65px 20px;
+
+                padding:
+                    65px 20px;
             }
 
+
             .features h2 {
+
                 font-size: 30px;
             }
+
+
+            .result-disease {
+
+                font-size: 19px;
+            }
+
         }
 
     </style>
@@ -368,11 +673,17 @@
         <div class="brand">
 
             <div class="logo">
-                🌱 AgriVision <span>AI</span>
+
+                🌱 AgriVision
+                <span>AI</span>
+
             </div>
 
+
             <div class="creator-tag">
+
                 BY PRIYANSHU KUMAR
+
             </div>
 
         </div>
@@ -393,6 +704,7 @@
     </nav>
 
 
+
     <!-- ================= HERO ================= -->
 
     <section class="hero">
@@ -401,7 +713,9 @@
 
 
             <div class="badge">
+
                 🤖 AI-POWERED AGRICULTURE
+
             </div>
 
 
@@ -428,12 +742,16 @@
             </p>
 
 
+
             <!-- ================= UPLOAD ================= -->
 
             <div class="upload-box">
 
+
                 <h2>
+
                     🌿 Analyze Your Plant
+
                 </h2>
 
 
@@ -447,15 +765,25 @@
 
                 <input
                     type="file"
+                    id="leafImage"
                     accept="image/*"
                 >
 
-            </div>
 
+                <!-- AI RESULT -->
+
+                <div
+                    id="aiResult"
+                    style="display:none;"
+                ></div>
+
+
+            </div>
 
         </div>
 
     </section>
+
 
 
     <!-- ================= FEATURES ================= -->
@@ -466,7 +794,9 @@
     >
 
         <h2>
+
             AI-Powered Features
+
         </h2>
 
 
@@ -494,6 +824,7 @@
             </div>
 
 
+
             <div class="card">
 
                 <div class="icon">
@@ -514,6 +845,7 @@
             </div>
 
 
+
             <div class="card">
 
                 <div class="icon">
@@ -532,6 +864,7 @@
                 </p>
 
             </div>
+
 
 
             <div class="card">
@@ -559,6 +892,7 @@
     </section>
 
 
+
     <!-- ================= FOOTER ================= -->
 
     <footer>
@@ -570,10 +904,330 @@
         Developed by
 
         <span class="footer-name">
+
             Priyanshu Kumar
+
         </span>
 
     </footer>
+
+
+
+    <!-- ================= AI PREDICTION SCRIPT ================= -->
+
+    <script>
+
+        const leafImage =
+            document.getElementById("leafImage");
+
+        const aiResult =
+            document.getElementById("aiResult");
+
+
+        leafImage.addEventListener(
+            "change",
+            async function () {
+
+
+                const file =
+                    this.files[0];
+
+
+                if (!file) {
+
+                    return;
+
+                }
+
+
+                /* Show result area */
+
+                aiResult.style.display =
+                    "block";
+
+
+                /* Loading state */
+
+                aiResult.innerHTML = `
+
+                    <div class="result-icon">
+                        🤖
+                    </div>
+
+                    <h3 class="result-title">
+                        Analyzing Plant...
+                    </h3>
+
+                    <p style="color:#9eafa4;">
+                        AI is examining your
+                        leaf image.
+                    </p>
+
+                `;
+
+
+                try {
+
+
+                    /* Create form data */
+
+                    const formData =
+                        new FormData();
+
+
+                    formData.append(
+                        "image",
+                        file
+                    );
+
+
+                    /* Send image to Flask API */
+
+                    const response =
+                        await fetch(
+                            "/predict",
+                            {
+                                method: "POST",
+                                body: formData
+                            }
+                        );
+
+
+                    /* Convert response */
+
+                    const result =
+                        await response.json();
+
+
+                    /* Check API result */
+
+                    if (!result.success) {
+
+                        throw new Error(
+                            result.error ||
+                            "Prediction failed."
+                        );
+
+                    }
+
+
+                    /* Get prediction */
+
+                    const disease =
+                        result.disease;
+
+                    const confidence =
+                        result.confidence;
+
+
+                    /* Determine health */
+
+                    let healthStatus =
+                        "Needs Attention";
+
+                    let healthIcon =
+                        "⚠️";
+
+
+                    if (
+                        disease
+                            .toLowerCase()
+                            .includes("healthy")
+                    ) {
+
+                        healthStatus =
+                            "Healthy Plant";
+
+                        healthIcon =
+                            "🌱";
+
+                    }
+
+
+                    /* Display result */
+
+                    aiResult.innerHTML = `
+
+                        <div class="result-icon">
+
+                            ${healthIcon}
+
+                        </div>
+
+
+                        <h3 class="result-title">
+
+                            AI Analysis Complete
+
+                        </h3>
+
+
+                        <div class="result-section">
+
+
+                            <p class="result-label">
+
+                                Detected Condition
+
+                            </p>
+
+
+                            <h2 class="result-disease">
+
+                                ${formatDiseaseName(
+                                    disease
+                                )}
+
+                            </h2>
+
+
+                            <p class="result-label">
+
+                                AI Confidence
+
+                            </p>
+
+
+                            <h2 class="confidence-value">
+
+                                ${confidence}%
+
+                            </h2>
+
+
+                            <div
+                                class="confidence-bar"
+                            >
+
+                                <div
+                                    class="confidence-fill"
+                                    style="
+                                        width:
+                                        ${Math.min(
+                                            Math.max(
+                                                confidence,
+                                                0
+                                            ),
+                                            100
+                                        )}%;
+                                    "
+                                ></div>
+
+                            </div>
+
+
+                            <p class="health-status">
+
+                                ${healthIcon}
+                                ${healthStatus}
+
+                            </p>
+
+
+                        </div>
+
+
+                        <button
+                            class="reset-button"
+                            onclick="resetAnalysis()"
+                        >
+
+                            🔄 Analyze Another Leaf
+
+                        </button>
+
+                    `;
+
+
+                } catch (error) {
+
+
+                    console.error(
+                        "Prediction Error:",
+                        error
+                    );
+
+
+                    aiResult.innerHTML = `
+
+                        <div
+                            class="result-icon"
+                        >
+                            ❌
+                        </div>
+
+
+                        <h3
+                            class="result-title"
+                            style="
+                                color:#ff7777;
+                            "
+                        >
+
+                            Analysis Failed
+
+                        </h3>
+
+
+                        <p
+                            style="
+                                color:#b8cabe;
+                            "
+                        >
+
+                            ${error.message}
+
+                        </p>
+
+
+                        <button
+                            class="reset-button"
+                            onclick="resetAnalysis()"
+                        >
+
+                            🔄 Try Again
+
+                        </button>
+
+                    `;
+
+                }
+
+            }
+        );
+
+
+        /* ================= FORMAT DISEASE ================= */
+
+        function formatDiseaseName(
+            disease
+        ) {
+
+            return disease
+                .replaceAll("_", " ")
+                .replaceAll("___", " - ")
+                .replaceAll(
+                    "including",
+                    "(including"
+                );
+
+        }
+
+
+        /* ================= RESET ================= */
+
+        function resetAnalysis() {
+
+            leafImage.value = "";
+
+            aiResult.style.display =
+                "none";
+
+            aiResult.innerHTML = "";
+
+        }
+
+    </script>
 
 
 </body>
