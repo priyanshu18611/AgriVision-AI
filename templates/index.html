@@ -14,10 +14,7 @@
 <meta name="theme-color"
       content="#06130b">
 
-<title>
-    AgriVision AI | Plant Health Intelligence
-</title>
-
+<title>AgriVision AI | Plant Health Intelligence</title>
 
 <style>
 
@@ -36,18 +33,14 @@ html{
 }
 
 body{
-
     font-family:
     Arial,
     Helvetica,
     sans-serif;
 
     background:#06130b;
-
     color:#ffffff;
-
     min-height:100vh;
-
     overflow-x:hidden;
 }
 
@@ -56,94 +49,72 @@ input{
     font-family:inherit;
 }
 
+button{
+    -webkit-tap-highlight-color:transparent;
+}
+
 
 /* =====================================================
    NAVBAR
 ===================================================== */
 
 nav{
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
     padding:18px 7%;
 
-    border-bottom:
-    1px solid #183b25;
+    border-bottom:1px solid #183b25;
 
-    background:
-    rgba(4,18,10,.96);
+    background:rgba(4,18,10,.96);
 
     position:sticky;
-
     top:0;
-
     z-index:1000;
 
     backdrop-filter:blur(15px);
 }
 
 .brand{
-
     display:flex;
-
     align-items:center;
-
     gap:12px;
 }
 
 .logo{
-
     font-size:24px;
-
     font-weight:bold;
-
     white-space:nowrap;
 }
 
 .logo span{
-
     color:#55e889;
 }
 
 .creator-tag{
-
     padding:6px 11px;
 
-    border:
-    1px solid
-    rgba(85,232,137,.35);
-
+    border:1px solid rgba(85,232,137,.35);
     border-radius:20px;
 
-    background:
-    rgba(85,232,137,.08);
+    background:rgba(85,232,137,.08);
 
     color:#8cf0a9;
 
     font-size:9px;
-
     letter-spacing:1px;
-
     font-weight:bold;
 }
 
 nav a{
-
     color:#b8cabe;
-
     text-decoration:none;
-
     margin-left:25px;
-
     transition:.3s;
 }
 
 nav a:hover{
-
     color:#55e889;
 }
 
@@ -153,13 +124,10 @@ nav a:hover{
 ===================================================== */
 
 .hero{
-
     min-height:650px;
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
     text-align:center;
@@ -167,7 +135,6 @@ nav a:hover{
     padding:80px 20px;
 
     background:
-
     radial-gradient(
         circle at center,
         rgba(53,180,91,.20),
@@ -176,21 +143,16 @@ nav a:hover{
 }
 
 .hero-content{
-
     width:100%;
-
     max-width:900px;
 }
 
 .badge{
-
     display:inline-block;
 
     padding:9px 18px;
 
-    border:
-    1px solid #2c7042;
-
+    border:1px solid #2c7042;
     border-radius:30px;
 
     color:#73e99a;
@@ -199,35 +161,25 @@ nav a:hover{
 
     margin-bottom:25px;
 
-    background:
-    rgba(85,232,137,.05);
+    background:rgba(85,232,137,.05);
 }
 
 h1{
-
-    font-size:
-    clamp(45px,8vw,82px);
-
+    font-size:clamp(45px,8vw,82px);
     line-height:1.05;
-
     margin-bottom:25px;
 }
 
 h1 span{
-
     color:#55e889;
 }
 
 .hero p{
-
     color:#aebdb3;
-
     font-size:18px;
-
     line-height:1.7;
 
     max-width:680px;
-
     margin:auto;
 }
 
@@ -237,64 +189,49 @@ h1 span{
 ===================================================== */
 
 .upload-box{
-
     margin:40px auto 0;
 
     max-width:650px;
 
     padding:35px;
 
-    border:
-    1px dashed #39784d;
-
+    border:1px dashed #39784d;
     border-radius:22px;
 
-    background:
-    rgba(255,255,255,.04);
+    background:rgba(255,255,255,.04);
 
     transition:.3s;
 }
 
 .upload-box:hover{
-
     border-color:#55e889;
 
     transform:translateY(-3px);
 
     box-shadow:
-    0 15px 40px
-    rgba(0,0,0,.25);
+    0 15px 40px rgba(0,0,0,.25);
 }
 
 .upload-box h2{
-
     margin-bottom:10px;
-
     font-size:30px;
 }
 
 .upload-box p{
-
     margin-bottom:25px;
-
     font-size:15px;
-
     color:#9eafa4;
 }
 
 input[type=file]{
-
     width:100%;
 
     padding:15px;
 
     color:#cfe5d5;
-
     background:#0c2114;
 
-    border:
-    1px solid #214b2e;
-
+    border:1px solid #214b2e;
     border-radius:12px;
 
     cursor:pointer;
@@ -306,14 +243,11 @@ input[type=file]{
 ===================================================== */
 
 #aiResult{
-
     margin-top:25px;
 
     padding:25px;
 
-    border:
-    1px solid #39784d;
-
+    border:1px solid #39784d;
     border-radius:18px;
 
     background:#0a1d11;
@@ -324,42 +258,29 @@ input[type=file]{
 }
 
 @keyframes resultAppear{
-
     from{
-
         opacity:0;
-
-        transform:
-        translateY(15px);
+        transform:translateY(15px);
     }
 
     to{
-
         opacity:1;
-
-        transform:
-        translateY(0);
+        transform:translateY(0);
     }
 }
 
 .result-icon{
-
     font-size:45px;
-
     margin-bottom:8px;
 }
 
 .result-title{
-
     margin:12px 0;
-
     font-size:24px;
-
     color:#55e889;
 }
 
 .result-section{
-
     margin-top:20px;
 
     padding:20px;
@@ -370,40 +291,31 @@ input[type=file]{
 }
 
 .result-label{
-
     color:#9eafa4;
 
     margin-bottom:8px;
 
     font-size:13px;
-
     letter-spacing:1px;
 }
 
 .result-disease{
-
     margin-bottom:20px;
-
     font-size:22px;
-
     word-break:break-word;
 }
 
 .crop-badge{
-
     display:inline-block;
 
     padding:8px 15px;
-
     margin-bottom:20px;
 
     border-radius:30px;
 
-    background:
-    rgba(85,232,137,.12);
+    background:rgba(85,232,137,.12);
 
-    border:
-    1px solid #245d38;
+    border:1px solid #245d38;
 
     color:#55e889;
 
@@ -411,14 +323,11 @@ input[type=file]{
 }
 
 .confidence-value{
-
     color:#55e889;
-
     font-size:30px;
 }
 
 .confidence-bar{
-
     margin-top:15px;
 
     height:10px;
@@ -431,23 +340,16 @@ input[type=file]{
 }
 
 .confidence-fill{
-
     height:100%;
-
     background:#55e889;
-
     border-radius:10px;
 
-    transition:
-    width 1s ease;
+    transition:width 1s ease;
 }
 
 .health-status{
-
     margin-top:20px;
-
     color:#b8cabe;
-
     font-size:16px;
 }
 
@@ -457,7 +359,6 @@ input[type=file]{
 ===================================================== */
 
 .info-box{
-
     margin-top:18px;
 
     padding:20px;
@@ -466,14 +367,12 @@ input[type=file]{
 
     background:#07180e;
 
-    border:
-    1px solid #183b25;
+    border:1px solid #183b25;
 
     text-align:left;
 }
 
 .info-box h3{
-
     color:#55e889;
 
     margin-bottom:12px;
@@ -482,12 +381,10 @@ input[type=file]{
 }
 
 .info-box ul{
-
     padding-left:20px;
 }
 
 .info-box li{
-
     color:#b8cabe;
 
     margin-bottom:9px;
@@ -496,19 +393,15 @@ input[type=file]{
 }
 
 .disclaimer{
-
     margin-top:18px;
 
     padding:15px;
 
     border-radius:10px;
 
-    background:
-    rgba(180,150,40,.10);
+    background:rgba(180,150,40,.10);
 
-    border:
-    1px solid
-    rgba(180,150,40,.30);
+    border:1px solid rgba(180,150,40,.30);
 
     color:#c7c0a0;
 
@@ -519,11 +412,10 @@ input[type=file]{
 
 
 /* =====================================================
-   BUTTONS
+   BUTTON
 ===================================================== */
 
 .primary-button{
-
     margin-top:20px;
 
     padding:12px 22px;
@@ -544,13 +436,10 @@ input[type=file]{
 }
 
 .primary-button:hover{
-
-    transform:
-    translateY(-2px);
+    transform:translateY(-2px);
 
     box-shadow:
-    0 8px 20px
-    rgba(85,232,137,.2);
+    0 8px 20px rgba(85,232,137,.2);
 }
 
 
@@ -559,16 +448,13 @@ input[type=file]{
 ===================================================== */
 
 .dashboard{
-
     padding:80px 7%;
 
     text-align:center;
 
-    border-top:
-    1px solid #183b25;
+    border-top:1px solid #183b25;
 
     background:
-
     radial-gradient(
         circle at top,
         rgba(53,180,91,.10),
@@ -577,21 +463,16 @@ input[type=file]{
 }
 
 .dashboard-container{
-
     max-width:1100px;
-
     margin:auto;
 }
 
 .dashboard-badge{
-
     display:inline-block;
 
     padding:8px 16px;
 
-    border:
-    1px solid #2c7042;
-
+    border:1px solid #2c7042;
     border-radius:30px;
 
     color:#73e99a;
@@ -602,38 +483,28 @@ input[type=file]{
 }
 
 .dashboard h2{
-
     font-size:38px;
-
     margin-bottom:10px;
 }
 
 .dashboard-subtitle{
-
     color:#9eafa4;
-
     margin-bottom:40px;
 }
 
 .stats-grid{
-
     display:grid;
 
     grid-template-columns:
-    repeat(
-        auto-fit,
-        minmax(190px,1fr)
-    );
+    repeat(auto-fit,minmax(190px,1fr));
 
     gap:18px;
 }
 
 .stat-card{
-
     padding:25px;
 
-    border:
-    1px solid #183b25;
+    border:1px solid #183b25;
 
     border-radius:20px;
 
@@ -643,51 +514,39 @@ input[type=file]{
 }
 
 .stat-card:hover{
-
-    transform:
-    translateY(-5px);
+    transform:translateY(-5px);
 
     border-color:#39784d;
 
     box-shadow:
-    0 15px 35px
-    rgba(0,0,0,.25);
+    0 15px 35px rgba(0,0,0,.25);
 }
 
 .stat-icon{
-
     font-size:36px;
-
     margin-bottom:12px;
 }
 
 .stat-label{
-
     color:#9eafa4;
-
     font-size:14px;
 }
 
 .stat-value{
-
     color:#55e889;
 
     font-size:32px;
-
     font-weight:bold;
 
     margin-top:8px;
 }
 
 .monitor-box{
-
     margin-top:25px;
 
     padding:25px;
 
-    border:
-    1px solid #183b25;
-
+    border:1px solid #183b25;
     border-radius:18px;
 
     background:#07180e;
@@ -696,17 +555,271 @@ input[type=file]{
 }
 
 .monitor-box h3{
-
     color:#55e889;
-
     margin-bottom:10px;
 }
 
 .monitor-box p{
+    color:#9eafa4;
+    line-height:1.6;
+}
+
+
+/* =====================================================
+   ADVANCED ANALYTICS
+===================================================== */
+
+.analytics-box{
+    margin-top:25px;
+
+    padding:25px;
+
+    border:1px solid #183b25;
+    border-radius:20px;
+
+    background:#07180e;
+
+    text-align:left;
+}
+
+.analytics-header{
+    margin-bottom:22px;
+}
+
+.analytics-badge{
+    display:inline-block;
+
+    padding:7px 13px;
+
+    border:1px solid #2c7042;
+    border-radius:20px;
+
+    color:#73e99a;
+
+    font-size:11px;
+
+    margin-bottom:12px;
+}
+
+.analytics-header h3{
+    color:#ffffff;
+    font-size:25px;
+    margin-bottom:7px;
+}
+
+.analytics-header p{
+    color:#9eafa4;
+    font-size:13px;
+    line-height:1.5;
+}
+
+.insights-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(140px,1fr));
+
+    gap:12px;
+
+    margin-bottom:25px;
+}
+
+.insight-card{
+    padding:16px;
+
+    border:1px solid #183b25;
+    border-radius:14px;
+
+    background:#0a1d11;
+
+    transition:.3s;
+}
+
+.insight-card:hover{
+    border-color:#39784d;
+    transform:translateY(-3px);
+}
+
+.insight-icon{
+    font-size:22px;
+    margin-bottom:7px;
+}
+
+.insight-label{
+    color:#9eafa4;
+    font-size:11px;
+}
+
+.insight-value{
+    display:block;
+
+    margin-top:5px;
+
+    color:#55e889;
+
+    font-size:20px;
+    font-weight:bold;
+
+    line-height:1.3;
+}
+
+.insight-small{
+    color:#718279;
+    font-size:11px;
+}
+
+.analytics-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:18px;
+}
+
+.chart-card{
+    padding:20px;
+
+    border:1px solid #183b25;
+    border-radius:16px;
+
+    background:#0a1d11;
+}
+
+.chart-card h4{
+    color:#55e889;
+
+    margin-bottom:18px;
+
+    font-size:17px;
+}
+
+.chart-row{
+    margin-bottom:16px;
+}
+
+.chart-label{
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:10px;
+
+    margin-bottom:6px;
+
+    font-size:13px;
+}
+
+.chart-name{
+    color:#cfe5d5;
+
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.chart-count{
+    color:#55e889;
+    font-weight:bold;
+}
+
+.chart-track{
+    height:8px;
+
+    background:#183b25;
+
+    border-radius:10px;
+
+    overflow:hidden;
+}
+
+.chart-fill{
+    height:100%;
+
+    background:#55e889;
+
+    border-radius:10px;
+
+    transition:width .8s ease;
+}
+
+.health-chart{
+    margin-top:18px;
+
+    padding:20px;
+
+    border:1px solid #183b25;
+    border-radius:16px;
+
+    background:#0a1d11;
+}
+
+.health-chart h4{
+    color:#55e889;
+
+    margin-bottom:18px;
+
+    font-size:17px;
+}
+
+.health-bar{
+    display:flex;
+
+    height:22px;
+    width:100%;
+
+    background:#183b25;
+
+    border-radius:20px;
+
+    overflow:hidden;
+}
+
+.health-healthy{
+    background:#55e889;
+    transition:width .8s ease;
+}
+
+.health-attention{
+    background:#c7a82c;
+    transition:width .8s ease;
+}
+
+.health-legend{
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    margin-top:12px;
+
+    font-size:12px;
+}
+
+.health-legend .healthy{
+    color:#55e889;
+}
+
+.health-legend .attention{
+    color:#c7a82c;
+}
+
+.analytics-note{
+    margin-top:18px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    background:rgba(85,232,137,.05);
+
+    border:1px solid rgba(85,232,137,.15);
 
     color:#9eafa4;
 
-    line-height:1.6;
+    font-size:11px;
+
+    line-height:1.5;
 }
 
 
@@ -715,38 +828,28 @@ input[type=file]{
 ===================================================== */
 
 .features{
-
     padding:80px 7%;
-
     text-align:center;
 }
 
 .features h2{
-
     font-size:36px;
-
     margin-bottom:40px;
 }
 
 .grid{
-
     display:grid;
 
     grid-template-columns:
-    repeat(
-        auto-fit,
-        minmax(210px,1fr)
-    );
+    repeat(auto-fit,minmax(210px,1fr));
 
     gap:20px;
 }
 
 .card{
-
     padding:30px 20px;
 
-    border:
-    1px solid #183b25;
+    border:1px solid #183b25;
 
     border-radius:20px;
 
@@ -756,33 +859,25 @@ input[type=file]{
 }
 
 .card:hover{
-
-    transform:
-    translateY(-7px);
+    transform:translateY(-7px);
 
     border-color:#39784d;
 
     box-shadow:
-    0 15px 40px
-    rgba(0,0,0,.25);
+    0 15px 40px rgba(0,0,0,.25);
 }
 
 .icon{
-
     font-size:40px;
-
     margin-bottom:15px;
 }
 
 .card h3{
-
     margin-bottom:10px;
 }
 
 .card p{
-
     color:#9eafa4;
-
     line-height:1.6;
 }
 
@@ -792,49 +887,37 @@ input[type=file]{
 ===================================================== */
 
 #history{
-
     padding:80px 7%;
 
     text-align:center;
 
-    border-top:
-    1px solid #183b25;
+    border-top:1px solid #183b25;
 }
 
 #history h2{
-
     font-size:36px;
-
     margin-bottom:12px;
 }
 
 .history-subtitle{
-
     color:#9eafa4;
-
     margin-bottom:35px;
-
     font-size:17px;
 }
 
 #historyList{
-
     max-width:850px;
-
     margin:auto;
 }
 
 .history-card{
-
     text-align:left;
 
     padding:25px;
 
     margin-bottom:20px;
 
-    border:
-    1px solid #183b25;
-
+    border:1px solid #183b25;
     border-radius:20px;
 
     background:#0a1d11;
@@ -843,15 +926,12 @@ input[type=file]{
 }
 
 .history-card:hover{
-
-    transform:
-    translateY(-4px);
+    transform:translateY(-4px);
 
     border-color:#39784d;
 }
 
 .history-crop{
-
     color:#55e889;
 
     font-size:23px;
@@ -862,14 +942,11 @@ input[type=file]{
 }
 
 .history-disease{
-
     font-size:18px;
-
     margin-bottom:12px;
 }
 
 .history-confidence{
-
     color:#55e889;
 
     font-size:24px;
@@ -878,14 +955,11 @@ input[type=file]{
 }
 
 .history-status{
-
     color:#aebdb3;
-
     margin-top:5px;
 }
 
 .history-time{
-
     color:#718279;
 
     margin-top:12px;
@@ -894,7 +968,6 @@ input[type=file]{
 }
 
 .history-actions{
-
     display:flex;
 
     gap:10px;
@@ -905,7 +978,6 @@ input[type=file]{
 }
 
 .history-btn{
-
     padding:9px 15px;
 
     border-radius:9px;
@@ -914,8 +986,7 @@ input[type=file]{
 
     font-weight:bold;
 
-    border:
-    1px solid #39784d;
+    border:1px solid #39784d;
 
     background:transparent;
 
@@ -923,34 +994,26 @@ input[type=file]{
 }
 
 .history-btn:hover{
-
-    background:
-    rgba(85,232,137,.10);
+    background:rgba(85,232,137,.10);
 }
 
 .delete-btn{
-
     color:#ff8585;
-
     border-color:#713d3d;
 }
 
 .delete-btn:hover{
-
-    background:
-    rgba(255,80,80,.08);
+    background:rgba(255,80,80,.08);
 }
 
 .clear-history{
-
     margin-top:20px;
 
     padding:13px 22px;
 
     border-radius:12px;
 
-    border:
-    1px solid #39784d;
+    border:1px solid #39784d;
 
     background:transparent;
 
@@ -962,17 +1025,13 @@ input[type=file]{
 }
 
 .clear-history:hover{
-
-    background:
-    rgba(85,232,137,.08);
+    background:rgba(85,232,137,.08);
 }
 
 .empty-history{
-
     padding:40px 20px;
 
-    border:
-    1px dashed #285a38;
+    border:1px dashed #285a38;
 
     border-radius:18px;
 
@@ -985,18 +1044,15 @@ input[type=file]{
 ===================================================== */
 
 .modal{
-
     position:fixed;
 
     inset:0;
 
-    background:
-    rgba(0,0,0,.78);
+    background:rgba(0,0,0,.78);
 
     display:none;
 
     align-items:center;
-
     justify-content:center;
 
     padding:20px;
@@ -1005,7 +1061,6 @@ input[type=file]{
 }
 
 .modal-content{
-
     width:100%;
 
     max-width:600px;
@@ -1016,8 +1071,7 @@ input[type=file]{
 
     padding:28px;
 
-    border:
-    1px solid #39784d;
+    border:1px solid #39784d;
 
     border-radius:20px;
 
@@ -1027,18 +1081,14 @@ input[type=file]{
 }
 
 .modal-content h2{
-
     color:#55e889;
-
     margin-bottom:20px;
 }
 
 .modal-close{
-
     position:absolute;
 
     right:18px;
-
     top:14px;
 
     border:none;
@@ -1053,7 +1103,6 @@ input[type=file]{
 }
 
 .modal-section{
-
     margin-top:18px;
 
     padding:18px;
@@ -1062,31 +1111,24 @@ input[type=file]{
 
     background:#06130b;
 
-    border:
-    1px solid #183b25;
+    border:1px solid #183b25;
 }
 
 .modal-section h3{
-
     color:#55e889;
-
     margin-bottom:10px;
 }
 
 .modal-section p{
-
     color:#ffffff;
-
     line-height:1.6;
 }
 
 .modal-section ul{
-
     padding-left:20px;
 }
 
 .modal-section li{
-
     color:#b8cabe;
 
     margin-bottom:8px;
@@ -1100,133 +1142,26 @@ input[type=file]{
 ===================================================== */
 
 footer{
-
     padding:30px;
 
     text-align:center;
 
     color:#718279;
 
-    border-top:
-    1px solid #183b25;
+    border-top:1px solid #183b25;
 }
 
 .footer-name{
-
     color:#55e889;
-
     font-weight:bold;
 }
 
 
 /* =====================================================
-   MOBILE
-===================================================== */
-
-@media(max-width:600px){
-
-    nav{
-
-        padding:15px 18px;
-    }
-
-    .brand{
-
-        gap:8px;
-    }
-
-    .logo{
-
-        font-size:19px;
-    }
-
-    .creator-tag{
-
-        display:none;
-    }
-
-    nav div:last-child{
-
-        display:none;
-    }
-
-    h1{
-
-        font-size:48px;
-    }
-
-    .hero{
-
-        min-height:600px;
-
-        padding:
-        60px 15px;
-    }
-
-    .hero p{
-
-        font-size:15px;
-    }
-
-    .upload-box{
-
-        padding:
-        28px 18px;
-    }
-
-    .dashboard{
-
-        padding:
-        65px 18px;
-    }
-
-    .dashboard h2{
-
-        font-size:30px;
-    }
-
-    .features{
-
-        padding:
-        65px 20px;
-    }
-
-    .features h2,
-    #history h2{
-
-        font-size:30px;
-    }
-
-    #history{
-
-        padding:
-        65px 20px;
-    }
-
-    .history-card{
-
-        padding:20px;
-    }
-
-    .modal{
-
-        padding:10px;
-    }
-
-    .modal-content{
-
-        padding:20px;
-    }
-
-}
-
-
-/* =====================================================
-   LOADING ANIMATION
+   LOADING
 ===================================================== */
 
 .loading{
-
     display:flex;
 
     flex-direction:column;
@@ -1237,28 +1172,123 @@ footer{
 }
 
 .spinner{
-
     width:45px;
-
     height:45px;
 
-    border:
-    4px solid #183b25;
+    border:4px solid #183b25;
 
     border-top-color:#55e889;
 
     border-radius:50%;
 
-    animation:
-    spin 1s linear infinite;
+    animation:spin 1s linear infinite;
 }
 
 @keyframes spin{
-
     to{
-
         transform:rotate(360deg);
     }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px){
+
+    nav{
+        padding:15px 18px;
+    }
+
+    .brand{
+        gap:8px;
+    }
+
+    .logo{
+        font-size:19px;
+    }
+
+    .creator-tag{
+        display:none;
+    }
+
+    nav > div:last-child{
+        display:none;
+    }
+
+    h1{
+        font-size:48px;
+    }
+
+    .hero{
+        min-height:600px;
+        padding:60px 15px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .upload-box{
+        padding:28px 18px;
+    }
+
+    .dashboard{
+        padding:65px 18px;
+    }
+
+    .dashboard h2{
+        font-size:30px;
+    }
+
+    .features{
+        padding:65px 20px;
+    }
+
+    .features h2,
+    #history h2{
+        font-size:30px;
+    }
+
+    #history{
+        padding:65px 20px;
+    }
+
+    .history-card{
+        padding:20px;
+    }
+
+    .analytics-box{
+        padding:18px;
+    }
+
+    .analytics-header h3{
+        font-size:22px;
+    }
+
+    .insights-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .analytics-grid{
+        grid-template-columns:1fr;
+    }
+
+    .health-legend{
+        flex-direction:column;
+        gap:7px;
+    }
+
+    .modal{
+        padding:10px;
+    }
+
+    .modal-content{
+        padding:20px;
+    }
+
 }
 
 </style>
@@ -1278,15 +1308,11 @@ footer{
     <div class="brand">
 
         <div class="logo">
-
             🌱 AgriVision <span>AI</span>
-
         </div>
 
         <div class="creator-tag">
-
             BY PRIYANSHU KUMAR
-
         </div>
 
     </div>
@@ -1294,21 +1320,13 @@ footer{
 
     <div>
 
-        <a href="#home">
-            Home
-        </a>
+        <a href="#home">Home</a>
 
-        <a href="#dashboard">
-            Dashboard
-        </a>
+        <a href="#dashboard">Dashboard</a>
 
-        <a href="#features">
-            Features
-        </a>
+        <a href="#features">Features</a>
 
-        <a href="#history">
-            History
-        </a>
+        <a href="#history">History</a>
 
     </div>
 
@@ -1327,11 +1345,8 @@ footer{
 
     <div class="hero-content">
 
-
         <div class="badge">
-
             🤖 AI-POWERED AGRICULTURE
-
         </div>
 
 
@@ -1358,22 +1373,16 @@ footer{
         </p>
 
 
-        <!-- UPLOAD -->
-
         <div class="upload-box">
 
             <h2>
-
                 🌿 Analyze Your Plant
-
             </h2>
 
 
             <p>
-
                 Upload a clear image of a
                 plant leaf to begin AI analysis.
-
             </p>
 
 
@@ -1408,26 +1417,19 @@ footer{
 
     <div class="dashboard-container">
 
-
         <div class="dashboard-badge">
-
             🤖 AI AGRICULTURE DASHBOARD
-
         </div>
 
 
         <h2>
-
             Plant Health Overview
-
         </h2>
 
 
         <p class="dashboard-subtitle">
-
             Real-time summary of your
             plant analysis activity
-
         </p>
 
 
@@ -1519,20 +1521,23 @@ footer{
         <div class="monitor-box">
 
             <h3>
-
                 🌿 AI Monitoring Status
-
             </h3>
 
-
             <p id="dashboardMessage">
-
                 Start analyzing plants to
                 build your health overview.
-
             </p>
 
         </div>
+
+
+        <!-- ADVANCED ANALYTICS -->
+
+        <div
+            class="analytics-box"
+            id="advancedAnalytics"
+        ></div>
 
     </div>
 
@@ -1550,9 +1555,7 @@ footer{
 >
 
     <h2>
-
         AI-Powered Features
-
     </h2>
 
 
@@ -1570,11 +1573,9 @@ footer{
             </h3>
 
             <p>
-
                 Identify plant diseases
                 using computer vision
                 and deep learning.
-
             </p>
 
         </div>
@@ -1591,10 +1592,8 @@ footer{
             </h3>
 
             <p>
-
                 View the AI model's
                 prediction confidence.
-
             </p>
 
         </div>
@@ -1611,10 +1610,8 @@ footer{
             </h3>
 
             <p>
-
                 Analyze the health
                 condition of your plant.
-
             </p>
 
         </div>
@@ -1631,10 +1628,8 @@ footer{
             </h3>
 
             <p>
-
                 Receive useful information
                 for managing detected diseases.
-
             </p>
 
         </div>
@@ -1652,18 +1647,13 @@ footer{
 
 <section id="history">
 
-
     <h2>
-
         📜 Prediction History
-
     </h2>
 
 
     <p class="history-subtitle">
-
         Your recent plant analysis results
-
     </p>
 
 
@@ -1674,11 +1664,8 @@ footer{
         class="clear-history"
         onclick="clearHistory()"
     >
-
         🗑️ Clear History
-
     </button>
-
 
 </section>
 
@@ -1694,29 +1681,22 @@ footer{
     onclick="closeModalOutside(event)"
 >
 
-
     <div class="modal-content">
-
 
         <button
             class="modal-close"
             onclick="closeDetails()"
         >
-
             ✕
-
         </button>
 
 
         <h2>
-
             🌿 Analysis Details
-
         </h2>
 
 
         <div id="modalBody"></div>
-
 
     </div>
 
@@ -1737,50 +1717,33 @@ footer{
     Developed by
 
     <span class="footer-name">
-
         Priyanshu Kumar
-
     </span>
 
 </footer>
 
 
 
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
 <script>
-
 
 /* =====================================================
    ELEMENTS
 ===================================================== */
 
 const leafImage =
-    document.getElementById(
-        "leafImage"
-    );
+    document.getElementById("leafImage");
 
 const aiResult =
-    document.getElementById(
-        "aiResult"
-    );
+    document.getElementById("aiResult");
 
 const historyList =
-    document.getElementById(
-        "historyList"
-    );
+    document.getElementById("historyList");
 
 const detailsModal =
-    document.getElementById(
-        "detailsModal"
-    );
+    document.getElementById("detailsModal");
 
 const modalBody =
-    document.getElementById(
-        "modalBody"
-    );
+    document.getElementById("modalBody");
 
 
 /* =====================================================
@@ -1793,38 +1756,15 @@ function escapeHTML(value){
         value === null ||
         value === undefined
     ){
-
         return "";
-
     }
 
     return String(value)
-
-        .replace(
-            /&/g,
-            "&amp;"
-        )
-
-        .replace(
-            /</g,
-            "&lt;"
-        )
-
-        .replace(
-            />/g,
-            "&gt;"
-        )
-
-        .replace(
-            /"/g,
-            "&quot;"
-        )
-
-        .replace(
-            /'/g,
-            "&#039;"
-        );
-
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
 }
 
 
@@ -1832,77 +1772,37 @@ function escapeHTML(value){
    FORMAT DISEASE
 ===================================================== */
 
-function formatDiseaseName(
-    disease
-){
+function formatDiseaseName(disease){
 
-    return String(
-        disease || ""
-    )
-
-    .replace(
-        /___/g,
-        " - "
-    )
-
-    .replace(
-        /_/g,
-        " "
-    )
-
-    .replace(
-        /\s+/g,
-        " "
-    )
-
-    .trim();
+    return String(disease || "")
+        .replace(/___/g," - ")
+        .replace(/_/g," ")
+        .replace(/\s+/g," ")
+        .trim();
 
 }
 
 
 /* =====================================================
-   SAFE DATE FORMAT
+   SAFE DATE
 ===================================================== */
 
 function formatDate(value){
 
     if(!value){
-
         return "Date unavailable";
-
     }
 
-
-    let date;
-
-
-    if(
-        typeof value === "number"
-    ){
-
-        date =
-            new Date(value);
-
-    }
-
-    else{
-
-        date =
-            new Date(value);
-
-    }
-
+    const date =
+        new Date(value);
 
     if(
         isNaN(
             date.getTime()
         )
     ){
-
         return "Date unavailable";
-
     }
-
 
     return date.toLocaleString();
 
@@ -1944,19 +1844,12 @@ function getHistory(){
 ===================================================== */
 
 function savePredictionHistory(
-
     crop,
-
     disease,
-
     confidence,
-
     status,
-
     symptoms,
-
     recommendations
-
 ){
 
     const history =
@@ -1965,8 +1858,7 @@ function savePredictionHistory(
 
     const item = {
 
-        id:
-            Date.now(),
+        id:Date.now(),
 
         crop:
             crop || "Unknown",
@@ -1975,25 +1867,18 @@ function savePredictionHistory(
             disease || "Unknown",
 
         confidence:
-            Number(
-                confidence || 0
-            ),
+            Number(confidence || 0),
 
         status:
-            status ||
-            "Needs Attention",
+            status || "Needs Attention",
 
         symptoms:
-            Array.isArray(
-                symptoms
-            )
+            Array.isArray(symptoms)
             ? symptoms
             : [],
 
         recommendations:
-            Array.isArray(
-                recommendations
-            )
+            Array.isArray(recommendations)
             ? recommendations
             : [],
 
@@ -2003,31 +1888,22 @@ function savePredictionHistory(
     };
 
 
-    history.unshift(
-        item
-    );
+    history.unshift(item);
 
 
     const limitedHistory =
-        history.slice(
-            0,
-            20
-        );
+        history.slice(0,20);
 
 
     localStorage.setItem(
-
         "agrivision_history",
-
         JSON.stringify(
             limitedHistory
         )
-
     );
 
 
     displayHistory();
-
     updateDashboard();
 
 }
@@ -2074,12 +1950,7 @@ function displayHistory(){
     historyList.innerHTML =
 
         history.map(
-
-            (
-                item,
-                index
-            ) => {
-
+            (item,index) => {
 
                 const healthy =
 
@@ -2096,12 +1967,6 @@ function displayHistory(){
                     healthy
                     ? "🌱"
                     : "⚠️";
-
-
-                const date =
-                    formatDate(
-                        item.time
-                    );
 
 
                 return `
@@ -2140,7 +2005,10 @@ function displayHistory(){
                         >
 
                             ${escapeHTML(
-                                item.confidence
+                                Number(
+                                    item.confidence || 0
+                                )
+                                .toFixed(2)
                             )}%
 
                         </div>
@@ -2153,7 +2021,8 @@ function displayHistory(){
                             ${icon}
 
                             ${escapeHTML(
-                                item.status
+                                item.status ||
+                                "Unknown"
                             )}
 
                         </div>
@@ -2164,8 +2033,11 @@ function displayHistory(){
                         >
 
                             🕒
+
                             ${escapeHTML(
-                                date
+                                formatDate(
+                                    item.time
+                                )
                             )}
 
                         </div>
@@ -2212,16 +2084,14 @@ function displayHistory(){
                 `;
 
             }
-
         )
-
         .join("");
 
 }
 
 
 /* =====================================================
-   UPDATE DASHBOARD
+   UPDATE DASHBOARD + ANALYTICS
 ===================================================== */
 
 function updateDashboard(){
@@ -2235,67 +2105,80 @@ function updateDashboard(){
 
 
     let healthy = 0;
-
     let attention = 0;
-
     let confidenceTotal = 0;
 
 
-    history.forEach(
-
-        item => {
-
-
-            const status =
-
-                String(
-                    item.status || ""
-                )
-                .toLowerCase();
+    const diseaseCount = {};
+    const cropCount = {};
 
 
-            if(
-                status.includes(
-                    "healthy"
-                )
-            ){
+    history.forEach(item => {
 
-                healthy++;
-
-            }
-
-            else{
-
-                attention++;
-
-            }
+        const status =
+            String(
+                item.status || ""
+            )
+            .toLowerCase();
 
 
-            confidenceTotal +=
-
-                Number(
-                    item.confidence || 0
-                );
-
+        if(
+            status.includes(
+                "healthy"
+            )
+        ){
+            healthy++;
+        }
+        else{
+            attention++;
         }
 
-    );
+
+        confidenceTotal +=
+            Number(
+                item.confidence || 0
+            );
+
+
+        const disease =
+            formatDiseaseName(
+                item.disease ||
+                "Unknown"
+            );
+
+
+        diseaseCount[disease] =
+            (
+                diseaseCount[disease] ||
+                0
+            ) + 1;
+
+
+        const crop =
+            String(
+                item.crop ||
+                "Unknown"
+            );
+
+
+        cropCount[crop] =
+            (
+                cropCount[crop] ||
+                0
+            ) + 1;
+
+    });
 
 
     const average =
-
         total > 0
-
         ?
-
         (
             confidenceTotal /
             total
         ).toFixed(1)
-
         :
-
-        0;
+        "0";
 
 
     document.getElementById(
@@ -2328,12 +2211,9 @@ function updateDashboard(){
         );
 
 
-    if(
-        total === 0
-    ){
+    if(total === 0){
 
         message.textContent =
-
             "Start analyzing plants to build your health overview.";
 
     }
@@ -2341,10 +2221,464 @@ function updateDashboard(){
     else{
 
         message.textContent =
-
             `AgriVision AI has analyzed ${total} plant sample${total === 1 ? "" : "s"} so far. ${healthy} healthy and ${attention} requiring attention.`;
 
     }
+
+
+    renderAdvancedAnalytics(
+        total,
+        healthy,
+        attention,
+        average,
+        diseaseCount,
+        cropCount
+    );
+
+}
+
+
+/* =====================================================
+   ADVANCED ANALYTICS
+===================================================== */
+
+function renderAdvancedAnalytics(
+    total,
+    healthy,
+    attention,
+    average,
+    diseaseCount,
+    cropCount
+){
+
+    const container =
+        document.getElementById(
+            "advancedAnalytics"
+        );
+
+
+    if(!container){
+        return;
+    }
+
+
+    if(total === 0){
+
+        container.innerHTML = `
+
+            <div class="analytics-header">
+
+                <div class="analytics-badge">
+                    📊 AI ANALYTICS
+                </div>
+
+                <h3>
+                    Advanced Plant Analytics
+                </h3>
+
+                <p>
+                    Insights will appear here
+                    after your first plant analysis.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    const diseaseEntries =
+        Object.entries(
+            diseaseCount
+        )
+        .sort(
+            (a,b) =>
+                b[1] - a[1]
+        );
+
+
+    const cropEntries =
+        Object.entries(
+            cropCount
+        )
+        .sort(
+            (a,b) =>
+                b[1] - a[1]
+        );
+
+
+    const maxDisease =
+        diseaseEntries.length
+        ?
+        diseaseEntries[0][1]
+        :
+        1;
+
+
+    const maxCrop =
+        cropEntries.length
+        ?
+        cropEntries[0][1]
+        :
+        1;
+
+
+    const mostDetected =
+        diseaseEntries.length
+        ?
+        diseaseEntries[0][0]
+        :
+        "None";
+
+
+    const mostDetectedCount =
+        diseaseEntries.length
+        ?
+        diseaseEntries[0][1]
+        :
+        0;
+
+
+    const healthyPercent =
+        (
+            healthy /
+            total *
+            100
+        ).toFixed(1);
+
+
+    const attentionPercent =
+        (
+            attention /
+            total *
+            100
+        ).toFixed(1);
+
+
+    const diseaseBars =
+        diseaseEntries
+        .slice(0,6)
+        .map(entry => {
+
+            const name =
+                entry[0];
+
+            const count =
+                entry[1];
+
+            const width =
+                (
+                    count /
+                    maxDisease *
+                    100
+                );
+
+
+            return `
+
+                <div class="chart-row">
+
+                    <div class="chart-label">
+
+                        <span
+                            class="chart-name"
+                        >
+                            ${escapeHTML(name)}
+                        </span>
+
+                        <span
+                            class="chart-count"
+                        >
+                            ${count}
+                        </span>
+
+                    </div>
+
+
+                    <div class="chart-track">
+
+                        <div
+                            class="chart-fill"
+                            style="
+                                width:${width}%;
+                            "
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            `;
+
+        })
+        .join("");
+
+
+    const cropBars =
+        cropEntries
+        .slice(0,6)
+        .map(entry => {
+
+            const name =
+                entry[0];
+
+            const count =
+                entry[1];
+
+            const width =
+                (
+                    count /
+                    maxCrop *
+                    100
+                );
+
+
+            return `
+
+                <div class="chart-row">
+
+                    <div class="chart-label">
+
+                        <span
+                            class="chart-name"
+                        >
+                            🌿
+                            ${escapeHTML(name)}
+                        </span>
+
+                        <span
+                            class="chart-count"
+                        >
+                            ${count}
+                        </span>
+
+                    </div>
+
+
+                    <div class="chart-track">
+
+                        <div
+                            class="chart-fill"
+                            style="
+                                width:${width}%;
+                            "
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            `;
+
+        })
+        .join("");
+
+
+    container.innerHTML = `
+
+        <div class="analytics-header">
+
+            <div class="analytics-badge">
+                📊 AI ANALYTICS
+            </div>
+
+
+            <h3>
+                Advanced Plant Analytics
+            </h3>
+
+
+            <p>
+                Intelligent insights generated
+                from your recent plant analyses.
+            </p>
+
+        </div>
+
+
+        <div class="insights-grid">
+
+
+            <div class="insight-card">
+
+                <div class="insight-icon">
+                    🌱
+                </div>
+
+                <div class="insight-label">
+                    Healthy Rate
+                </div>
+
+                <strong class="insight-value">
+                    ${healthyPercent}%
+                </strong>
+
+            </div>
+
+
+            <div class="insight-card">
+
+                <div class="insight-icon">
+                    ⚠️
+                </div>
+
+                <div class="insight-label">
+                    Attention Rate
+                </div>
+
+                <strong class="insight-value">
+                    ${attentionPercent}%
+                </strong>
+
+            </div>
+
+
+            <div class="insight-card">
+
+                <div class="insight-icon">
+                    🎯
+                </div>
+
+                <div class="insight-label">
+                    Avg Confidence
+                </div>
+
+                <strong class="insight-value">
+                    ${average}%
+                </strong>
+
+            </div>
+
+
+            <div class="insight-card">
+
+                <div class="insight-icon">
+                    🔬
+                </div>
+
+                <div class="insight-label">
+                    Most Detected
+                </div>
+
+                <strong
+                    class="insight-value"
+                    style="font-size:13px;"
+                >
+                    ${escapeHTML(
+                        mostDetected
+                    )}
+                </strong>
+
+                <small class="insight-small">
+
+                    ${mostDetectedCount}
+                    detection${mostDetectedCount === 1 ? "" : "s"}
+
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="analytics-grid">
+
+
+            <div class="chart-card">
+
+                <h4>
+                    🦠 Disease Distribution
+                </h4>
+
+                ${
+                    diseaseBars ||
+                    `
+                    <p style="color:#718279;">
+                        No disease data available.
+                    </p>
+                    `
+                }
+
+            </div>
+
+
+            <div class="chart-card">
+
+                <h4>
+                    🌾 Crop Analysis
+                </h4>
+
+                ${
+                    cropBars ||
+                    `
+                    <p style="color:#718279;">
+                        No crop data available.
+                    </p>
+                    `
+                }
+
+            </div>
+
+        </div>
+
+
+        <div class="health-chart">
+
+            <h4>
+                ❤️ Plant Health Distribution
+            </h4>
+
+
+            <div class="health-bar">
+
+                <div
+                    class="health-healthy"
+                    style="
+                        width:${healthyPercent}%;
+                    "
+                ></div>
+
+
+                <div
+                    class="health-attention"
+                    style="
+                        width:${attentionPercent}%;
+                    "
+                ></div>
+
+            </div>
+
+
+            <div class="health-legend">
+
+                <span class="healthy">
+                    🌱 Healthy
+                    ${healthyPercent}%
+                </span>
+
+
+                <span class="attention">
+                    ⚠️ Attention
+                    ${attentionPercent}%
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="analytics-note">
+
+            🤖 Analytics are calculated from
+            prediction history stored in
+            this browser.
+
+        </div>
+
+    `;
 
 }
 
@@ -2364,39 +2698,27 @@ function viewDetails(index){
 
 
     if(!item){
-
         return;
-
     }
 
 
     const symptoms =
-
         Array.isArray(
             item.symptoms
         )
-
         ?
-
         item.symptoms
-
         :
-
         [];
 
 
     const recommendations =
-
         Array.isArray(
             item.recommendations
         )
-
         ?
-
         item.recommendations
-
         :
-
         [];
 
 
@@ -2409,11 +2731,9 @@ function viewDetails(index){
             </h3>
 
             <p>
-
                 ${escapeHTML(
                     item.crop
                 )}
-
             </p>
 
         </div>
@@ -2426,13 +2746,11 @@ function viewDetails(index){
             </h3>
 
             <p>
-
                 ${escapeHTML(
                     formatDiseaseName(
                         item.disease
                     )
                 )}
-
             </p>
 
         </div>
@@ -2445,11 +2763,11 @@ function viewDetails(index){
             </h3>
 
             <p>
-
                 ${escapeHTML(
-                    item.confidence
+                    Number(
+                        item.confidence || 0
+                    ).toFixed(2)
                 )}%
-
             </p>
 
         </div>
@@ -2462,11 +2780,10 @@ function viewDetails(index){
             </h3>
 
             <p>
-
                 ${escapeHTML(
-                    item.status
+                    item.status ||
+                    "Unknown"
                 )}
-
             </p>
 
         </div>
@@ -2474,120 +2791,86 @@ function viewDetails(index){
 
         ${
             symptoms.length
-
             ?
-
             `
 
-                <div
-                    class="modal-section"
-                >
+            <div class="modal-section">
 
-                    <h3>
+                <h3>
+                    🔎 Possible Symptoms
+                </h3>
 
-                        🔎 Possible Symptoms
+                <ul>
 
-                    </h3>
+                    ${
+                        symptoms.map(
+                            symptom => `
+                                <li>
+                                    ${escapeHTML(
+                                        symptom
+                                    )}
+                                </li>
+                            `
+                        ).join("")
+                    }
 
-                    <ul>
+                </ul>
 
-                        ${
-                            symptoms.map(
-
-                                symptom => `
-
-                                    <li>
-
-                                        ${escapeHTML(
-                                            symptom
-                                        )}
-
-                                    </li>
-
-                                `
-
-                            ).join("")
-                        }
-
-                    </ul>
-
-                </div>
+            </div>
 
             `
-
             :
-
             ""
-
         }
 
 
         ${
             recommendations.length
-
             ?
-
             `
 
-                <div
-                    class="modal-section"
-                >
+            <div class="modal-section">
 
-                    <h3>
+                <h3>
+                    💡 Recommended Care
+                </h3>
 
-                        💡 Recommended Care
+                <ul>
 
-                    </h3>
+                    ${
+                        recommendations.map(
+                            recommendation => `
+                                <li>
+                                    ${escapeHTML(
+                                        recommendation
+                                    )}
+                                </li>
+                            `
+                        ).join("")
+                    }
 
-                    <ul>
+                </ul>
 
-                        ${
-                            recommendations.map(
-
-                                recommendation => `
-
-                                    <li>
-
-                                        ${escapeHTML(
-                                            recommendation
-                                        )}
-
-                                    </li>
-
-                                `
-
-                            ).join("")
-                        }
-
-                    </ul>
-
-                </div>
+            </div>
 
             `
-
             :
-
             ""
-
         }
 
 
-        <div
-            class="modal-section"
-        >
+        <div class="modal-section">
 
             <h3>
                 🕒 Analysis Time
             </h3>
 
             <p>
-
                 ${escapeHTML(
                     formatDate(
                         item.time
                     )
                 )}
-
             </p>
 
         </div>
@@ -2602,7 +2885,7 @@ function viewDetails(index){
 
 
 /* =====================================================
-   CLOSE DETAILS
+   CLOSE MODAL
 ===================================================== */
 
 function closeDetails(){
@@ -2613,17 +2896,13 @@ function closeDetails(){
 }
 
 
-function closeModalOutside(
-    event
-){
+function closeModalOutside(event){
 
     if(
         event.target ===
         detailsModal
     ){
-
         closeDetails();
-
     }
 
 }
@@ -2640,9 +2919,7 @@ function deleteHistory(index){
 
 
     if(!history[index]){
-
         return;
-
     }
 
 
@@ -2653,18 +2930,12 @@ function deleteHistory(index){
 
 
     localStorage.setItem(
-
         "agrivision_history",
-
-        JSON.stringify(
-            history
-        )
-
+        JSON.stringify(history)
     );
 
 
     displayHistory();
-
     updateDashboard();
 
 }
@@ -2683,9 +2954,7 @@ function clearHistory(){
     if(
         history.length === 0
     ){
-
         return;
-
     }
 
 
@@ -2696,9 +2965,7 @@ function clearHistory(){
 
 
     if(!confirmed){
-
         return;
-
     }
 
 
@@ -2708,20 +2975,17 @@ function clearHistory(){
 
 
     displayHistory();
-
     updateDashboard();
 
 }
 
 
 /* =====================================================
-   IMAGE UPLOAD
+   IMAGE UPLOAD + AI PREDICTION
 ===================================================== */
 
 leafImage.addEventListener(
-
     "change",
-
     async function(){
 
         const file =
@@ -2729,9 +2993,7 @@ leafImage.addEventListener(
 
 
         if(!file){
-
             return;
-
         }
 
 
@@ -2745,19 +3007,14 @@ leafImage.addEventListener(
 
                 <div class="spinner"></div>
 
-                <h3
-                    class="result-title"
-                >
+                <h3 class="result-title">
 
                     Analyzing Plant...
 
                 </h3>
 
-                <p
-                    style="
-                        color:#9eafa4;
-                    "
-                >
+
+                <p style="color:#9eafa4;">
 
                     AI is examining
                     your leaf image...
@@ -2771,7 +3028,6 @@ leafImage.addEventListener(
 
         try{
 
-
             const formData =
                 new FormData();
 
@@ -2784,19 +3040,11 @@ leafImage.addEventListener(
 
             const response =
                 await fetch(
-
                     "/predict",
-
                     {
-
-                        method:
-                            "POST",
-
-                        body:
-                            formData
-
+                        method:"POST",
+                        body:formData
                     }
-
                 );
 
 
@@ -2810,10 +3058,8 @@ leafImage.addEventListener(
             ){
 
                 throw new Error(
-
                     result.error ||
                     "Prediction failed."
-
                 );
 
             }
@@ -2837,196 +3083,136 @@ leafImage.addEventListener(
 
             const status =
                 result.status ||
-
                 (
-
                     disease
-                        .toLowerCase()
-                        .includes(
-                            "healthy"
-                        )
-
+                    .toLowerCase()
+                    .includes(
+                        "healthy"
+                    )
                     ?
-
                     "Healthy"
-
                     :
-
                     "Needs Attention"
-
                 );
 
 
             const symptoms =
-
                 Array.isArray(
                     result.symptoms
                 )
-
                 ?
-
                 result.symptoms
-
                 :
-
                 [];
 
 
             const recommendations =
-
                 Array.isArray(
                     result.recommendation
                 )
-
                 ?
-
                 result.recommendation
-
                 :
-
                 [];
 
 
             const isHealthy =
-
                 status
-                    .toLowerCase()
-                    .includes(
-                        "healthy"
-                    );
+                .toLowerCase()
+                .includes(
+                    "healthy"
+                );
 
 
             const healthIcon =
-
                 isHealthy
-
                 ?
-
                 "🌱"
-
                 :
-
                 "⚠️";
 
 
-            /* SAVE HISTORY */
+            /* SAVE */
 
             savePredictionHistory(
-
                 crop,
-
                 disease,
-
                 confidence,
-
                 status,
-
                 symptoms,
-
                 recommendations
-
             );
 
 
             /* SYMPTOMS */
 
             const symptomsHTML =
-
                 symptoms.length
-
                 ?
-
                 `
 
-                    <div
-                        class="info-box"
-                    >
+                <div class="info-box">
 
-                        <h3>
+                    <h3>
+                        🔎 Possible Symptoms
+                    </h3>
 
-                            🔎 Possible Symptoms
+                    <ul>
 
-                        </h3>
+                        ${
+                            symptoms.map(
+                                symptom => `
+                                    <li>
+                                        ${escapeHTML(
+                                            symptom
+                                        )}
+                                    </li>
+                                `
+                            ).join("")
+                        }
 
-                        <ul>
+                    </ul>
 
-                            ${
-                                symptoms.map(
-
-                                    symptom => `
-
-                                        <li>
-
-                                            ${escapeHTML(
-                                                symptom
-                                            )}
-
-                                        </li>
-
-                                    `
-
-                                ).join("")
-                            }
-
-                        </ul>
-
-                    </div>
+                </div>
 
                 `
-
                 :
-
                 "";
 
 
             /* RECOMMENDATIONS */
 
             const recommendationsHTML =
-
                 recommendations.length
-
                 ?
-
                 `
 
-                    <div
-                        class="info-box"
-                    >
+                <div class="info-box">
 
-                        <h3>
+                    <h3>
+                        💡 Recommended Care
+                    </h3>
 
-                            💡 Recommended Care
+                    <ul>
 
-                        </h3>
+                        ${
+                            recommendations.map(
+                                recommendation => `
+                                    <li>
+                                        ${escapeHTML(
+                                            recommendation
+                                        )}
+                                    </li>
+                                `
+                            ).join("")
+                        }
 
-                        <ul>
+                    </ul>
 
-                            ${
-                                recommendations.map(
-
-                                    recommendation => `
-
-                                        <li>
-
-                                            ${escapeHTML(
-                                                recommendation
-                                            )}
-
-                                        </li>
-
-                                    `
-
-                                ).join("")
-                            }
-
-                        </ul>
-
-                    </div>
+                </div>
 
                 `
-
                 :
-
                 "";
 
 
@@ -3041,32 +3227,22 @@ leafImage.addEventListener(
                 </div>
 
 
-                <h3
-                    class="result-title"
-                >
+                <h3 class="result-title">
 
                     AI Analysis Complete
 
                 </h3>
 
 
-                <div
-                    class="result-section"
-                >
+                <div class="result-section">
 
 
-                    <p
-                        class="result-label"
-                    >
-
+                    <p class="result-label">
                         CROP
-
                     </p>
 
 
-                    <div
-                        class="crop-badge"
-                    >
+                    <div class="crop-badge">
 
                         🌿
 
@@ -3077,18 +3253,12 @@ leafImage.addEventListener(
                     </div>
 
 
-                    <p
-                        class="result-label"
-                    >
-
+                    <p class="result-label">
                         DETECTED CONDITION
-
                     </p>
 
 
-                    <h2
-                        class="result-disease"
-                    >
+                    <h2 class="result-disease">
 
                         ${escapeHTML(
                             formatDiseaseName(
@@ -3099,29 +3269,21 @@ leafImage.addEventListener(
                     </h2>
 
 
-                    <p
-                        class="result-label"
-                    >
-
+                    <p class="result-label">
                         AI CONFIDENCE
-
                     </p>
 
 
-                    <h2
-                        class="confidence-value"
-                    >
+                    <h2 class="confidence-value">
 
                         ${escapeHTML(
-                            confidence
+                            confidence.toFixed(2)
                         )}%
 
                     </h2>
 
 
-                    <div
-                        class="confidence-bar"
-                    >
+                    <div class="confidence-bar">
 
                         <div
                             class="confidence-fill"
@@ -3140,9 +3302,7 @@ leafImage.addEventListener(
                     </div>
 
 
-                    <p
-                        class="health-status"
-                    >
+                    <p class="health-status">
 
                         ${healthIcon}
 
@@ -3151,7 +3311,6 @@ leafImage.addEventListener(
                         )}
 
                     </p>
-
 
                 </div>
 
@@ -3162,9 +3321,7 @@ leafImage.addEventListener(
                 ${recommendationsHTML}
 
 
-                <div
-                    class="disclaimer"
-                >
+                <div class="disclaimer">
 
                     ⚠️
 
@@ -3189,9 +3346,7 @@ leafImage.addEventListener(
 
                 <button
                     class="primary-button"
-                    onclick="
-                        resetAnalysis()
-                    "
+                    onclick="resetAnalysis()"
                 >
 
                     🔄 Analyze Another Leaf
@@ -3203,11 +3358,10 @@ leafImage.addEventListener(
 
             updateDashboard();
 
-
         }
 
-        catch(error){
 
+        catch(error){
 
             console.error(
                 "Prediction Error:",
@@ -3218,17 +3372,13 @@ leafImage.addEventListener(
             aiResult.innerHTML = `
 
                 <div class="result-icon">
-
                     ❌
-
                 </div>
 
 
                 <h3
                     class="result-title"
-                    style="
-                        color:#ff7777;
-                    "
+                    style="color:#ff7777;"
                 >
 
                     Analysis Failed
@@ -3236,11 +3386,7 @@ leafImage.addEventListener(
                 </h3>
 
 
-                <p
-                    style="
-                        color:#b8cabe;
-                    "
-                >
+                <p style="color:#b8cabe;">
 
                     ${escapeHTML(
                         error.message
@@ -3251,9 +3397,7 @@ leafImage.addEventListener(
 
                 <button
                     class="primary-button"
-                    onclick="
-                        resetAnalysis()
-                    "
+                    onclick="resetAnalysis()"
                 >
 
                     🔄 Try Again
@@ -3265,7 +3409,6 @@ leafImage.addEventListener(
         }
 
     }
-
 );
 
 
@@ -3295,9 +3438,7 @@ displayHistory();
 
 updateDashboard();
 
-
 </script>
-
 
 </body>
 
