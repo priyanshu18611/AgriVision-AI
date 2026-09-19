@@ -5,16 +5,24 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description"
-          content="AgriVision AI - AI-powered plant disease detection and crop health monitoring">
+    <meta
+        name="description"
+        content="AgriVision AI - AI-powered plant disease detection and crop health monitoring"
+    >
 
-    <meta name="theme-color"
-          content="#06130b">
+    <meta
+        name="theme-color"
+        content="#06130b"
+    >
 
-    <title>AgriVision AI | Plant Health Intelligence</title>
+    <title>
+        AgriVision AI | Plant Health Intelligence
+    </title>
 
 
     <style>
@@ -25,69 +33,122 @@
             box-sizing: border-box;
         }
 
+
         html {
             scroll-behavior: smooth;
         }
 
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
             background: #06130b;
+
             color: #ffffff;
+
             min-height: 100vh;
+
+            overflow-x: hidden;
         }
 
 
         /* ================= NAVBAR ================= */
 
         nav {
+
             display: flex;
+
             justify-content: space-between;
+
             align-items: center;
+
             padding: 18px 7%;
-            border-bottom: 1px solid #183b25;
-            background: rgba(4, 18, 10, 0.96);
+
+            border-bottom:
+                1px solid #183b25;
+
+            background:
+                rgba(4, 18, 10, 0.97);
+
             position: sticky;
+
             top: 0;
+
             z-index: 1000;
+
             backdrop-filter: blur(15px);
         }
 
+
         .brand {
+
             display: flex;
+
             align-items: center;
+
             gap: 12px;
         }
 
+
         .logo {
+
             font-size: 24px;
+
             font-weight: bold;
+
             white-space: nowrap;
         }
 
+
         .logo span {
+
             color: #55e889;
         }
 
+
         .creator-tag {
+
             padding: 6px 11px;
-            border: 1px solid rgba(85, 232, 137, 0.35);
+
+            border:
+                1px solid
+                rgba(85, 232, 137, 0.35);
+
             border-radius: 20px;
-            background: rgba(85, 232, 137, 0.08);
+
+            background:
+                rgba(85, 232, 137, 0.08);
+
             color: #8cf0a9;
+
             font-size: 9px;
+
             letter-spacing: 1px;
+
             font-weight: bold;
+
             white-space: nowrap;
         }
 
+
         nav a {
+
             color: #b8cabe;
+
             text-decoration: none;
+
             margin-left: 25px;
+
             transition: 0.3s;
         }
 
+
         nav a:hover {
+
             color: #55e889;
         }
 
@@ -95,13 +156,21 @@
         /* ================= HERO ================= */
 
         .hero {
+
             min-height: 650px;
+
             display: flex;
+
             justify-content: center;
+
             align-items: center;
+
             text-align: center;
+
             padding: 70px 20px;
+
             background:
+
                 radial-gradient(
                     circle at center,
                     rgba(53, 180, 91, 0.20),
@@ -109,37 +178,64 @@
                 );
         }
 
+
         .hero-content {
+
             width: 100%;
-            max-width: 900px;
+
+            max-width: 850px;
         }
+
 
         .badge {
+
             display: inline-block;
+
             padding: 9px 18px;
-            border: 1px solid #2c7042;
+
+            border:
+                1px solid #2c7042;
+
             border-radius: 30px;
+
             color: #73e99a;
+
             font-size: 13px;
+
             margin-bottom: 25px;
-            background: rgba(85, 232, 137, 0.05);
+
+            background:
+                rgba(85, 232, 137, 0.05);
         }
+
 
         h1 {
-            font-size: clamp(45px, 8vw, 82px);
+
+            font-size:
+                clamp(45px, 8vw, 82px);
+
             line-height: 1.05;
+
             margin-bottom: 25px;
         }
 
+
         h1 span {
+
             color: #55e889;
         }
 
+
         .hero p {
+
             color: #aebdb3;
+
             font-size: 18px;
+
             line-height: 1.7;
+
             max-width: 680px;
+
             margin: auto;
         }
 
@@ -147,38 +243,70 @@
         /* ================= UPLOAD ================= */
 
         .upload-box {
-            margin: 40px auto 0;
-            max-width: 700px;
+
+            margin:
+                40px auto 0;
+
+            max-width: 600px;
+
             padding: 35px;
-            border: 1px dashed #39784d;
+
+            border:
+                1px dashed #39784d;
+
             border-radius: 22px;
-            background: rgba(255, 255, 255, 0.04);
+
+            background:
+                rgba(255, 255, 255, 0.04);
+
             transition: 0.3s;
         }
 
+
         .upload-box:hover {
+
             border-color: #55e889;
-            transform: translateY(-3px);
+
+            transform:
+                translateY(-3px);
+
             box-shadow:
-                0 15px 40px rgba(0, 0, 0, 0.25);
+                0 15px 40px
+                rgba(0, 0, 0, 0.25);
         }
 
+
         .upload-box h2 {
+
             margin-bottom: 10px;
         }
 
-        .upload-box p {
+
+        .upload-box > p {
+
             margin-bottom: 25px;
+
             font-size: 15px;
+
+            color: #aebdb3;
         }
 
+
         input[type="file"] {
+
             width: 100%;
+
             padding: 15px;
+
             color: #cfe5d5;
+
             background: #0c2114;
-            border: 1px solid #214b2e;
+
+            border:
+                1px solid #214b2e;
+
             border-radius: 12px;
+
             cursor: pointer;
         }
 
@@ -186,202 +314,294 @@
         /* ================= RESULT ================= */
 
         #aiResult {
+
             margin-top: 25px;
+
             padding: 25px;
-            border: 1px solid #39784d;
-            border-radius: 20px;
+
+            border:
+                1px solid #39784d;
+
+            border-radius: 18px;
+
             background: #0a1d11;
+
             color: #ffffff;
+
             text-align: center;
-            animation: resultAppear 0.5s ease;
+
+            animation:
+                resultAppear 0.5s ease;
         }
+
 
         @keyframes resultAppear {
 
             from {
+
                 opacity: 0;
-                transform: translateY(15px);
+
+                transform:
+                    translateY(15px);
             }
 
             to {
-                opacity: 1;
-                transform: translateY(0);
-            }
 
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
         }
 
+
         .result-icon {
+
             font-size: 45px;
+
             margin-bottom: 8px;
         }
 
+
         .result-title {
+
             margin: 12px 0;
+
             font-size: 24px;
+
             color: #55e889;
         }
 
+
         .result-section {
+
             margin-top: 20px;
+
             padding: 20px;
+
             border-radius: 15px;
+
             background: #06130b;
         }
 
+
         .result-label {
+
             color: #9eafa4;
+
             margin-bottom: 8px;
+
             font-size: 13px;
-            text-transform: uppercase;
+
             letter-spacing: 1px;
         }
 
+
         .result-disease {
+
             margin-bottom: 20px;
+
             font-size: 22px;
+
             word-break: break-word;
         }
 
+
+        .crop-badge {
+
+            display: inline-block;
+
+            padding: 8px 14px;
+
+            margin-bottom: 20px;
+
+            border:
+                1px solid #28663b;
+
+            border-radius: 30px;
+
+            background:
+                rgba(85, 232, 137, 0.10);
+
+            color: #8cf0a9;
+
+            font-weight: bold;
+
+            font-size: 14px;
+        }
+
+
         .confidence-value {
+
             color: #55e889;
+
             font-size: 28px;
         }
 
+
         .confidence-bar {
+
             margin-top: 15px;
+
             height: 10px;
+
             background: #183b25;
+
             border-radius: 10px;
+
             overflow: hidden;
         }
 
+
         .confidence-fill {
+
             height: 100%;
+
             background: #55e889;
+
             border-radius: 10px;
-            transition: width 1s ease;
+
+            transition:
+                width 1s ease;
         }
+
 
         .health-status {
+
             margin-top: 20px;
+
             color: #b8cabe;
+
             font-size: 16px;
         }
 
 
-        /* ================= AI INFO GRID ================= */
-
-        .ai-info-grid {
-            display: grid;
-            grid-template-columns:
-                repeat(
-                    auto-fit,
-                    minmax(200px, 1fr)
-                );
-
-            gap: 15px;
-            margin-top: 20px;
-        }
+        /* ================= INFO CARDS ================= */
 
         .info-card {
-            text-align: left;
+
+            margin-top: 18px;
+
             padding: 20px;
-            border: 1px solid #183b25;
+
+            border:
+                1px solid #183b25;
+
             border-radius: 15px;
-            background: #08190e;
-            transition: 0.3s;
+
+            background: #07170d;
+
+            text-align: left;
         }
 
-        .info-card:hover {
-            border-color: #39784d;
-            transform: translateY(-3px);
-        }
 
-        .info-card h4 {
+        .info-card h3 {
+
             color: #55e889;
-            margin-bottom: 12px;
+
             font-size: 16px;
+
+            margin-bottom: 12px;
         }
 
-        .info-card p {
-            color: #c0d0c5;
-            line-height: 1.6;
-            font-size: 14px;
-            margin: 0;
-        }
 
         .info-card ul {
+
             padding-left: 20px;
-            margin: 0;
         }
 
+
         .info-card li {
-            color: #c0d0c5;
-            margin-bottom: 9px;
-            line-height: 1.5;
+
+            color: #b8cabe;
+
+            line-height: 1.6;
+
+            margin-bottom: 8px;
+
             font-size: 14px;
         }
 
-        .crop-badge {
-            display: inline-block;
-            padding: 7px 13px;
-            border-radius: 20px;
-            background: rgba(85, 232, 137, 0.10);
-            border: 1px solid rgba(85, 232, 137, 0.25);
-            color: #8cf0a9;
-            font-weight: bold;
-        }
-
-
-        /* ================= DISCLAIMER ================= */
 
         .disclaimer {
-            margin-top: 20px;
+
+            margin-top: 18px;
+
             padding: 14px;
+
+            border:
+                1px solid #665d1c;
+
             border-radius: 12px;
-            background: rgba(255, 193, 7, 0.05);
-            border: 1px solid rgba(255, 193, 7, 0.20);
-            color: #aebdb3;
+
+            background:
+                rgba(150, 130, 20, 0.10);
+
+            color: #c9c29b;
+
             font-size: 12px;
-            line-height: 1.6;
+
+            line-height: 1.5;
+
+            text-align: left;
         }
 
 
-        /* ================= BUTTON ================= */
-
         .reset-button {
+
             margin-top: 20px;
+
             padding: 12px 22px;
+
             border: none;
+
             border-radius: 10px;
+
             background: #55e889;
+
             color: #06130b;
+
             font-weight: bold;
+
             cursor: pointer;
+
             transition: 0.3s;
         }
 
+
         .reset-button:hover {
-            transform: translateY(-2px);
+
+            transform:
+                translateY(-2px);
+
             box-shadow:
-                0 8px 20px rgba(85, 232, 137, 0.2);
+                0 8px 20px
+                rgba(85, 232, 137, 0.2);
         }
 
 
         /* ================= FEATURES ================= */
 
         .features {
+
             padding: 80px 7%;
+
             text-align: center;
         }
 
+
         .features h2 {
+
             font-size: 36px;
+
             margin-bottom: 40px;
         }
 
+
         .grid {
+
             display: grid;
+
             grid-template-columns:
                 repeat(
                     auto-fit,
@@ -391,102 +611,254 @@
             gap: 20px;
         }
 
+
         .card {
+
             padding: 30px 20px;
-            border: 1px solid #183b25;
+
+            border:
+                1px solid #183b25;
+
             border-radius: 20px;
+
             background: #0a1d11;
+
             transition: 0.3s;
         }
 
+
         .card:hover {
-            transform: translateY(-7px);
-            border-color: #39784d;
+
+            transform:
+                translateY(-7px);
+
+            border-color:
+                #39784d;
+
             box-shadow:
-                0 15px 40px rgba(0, 0, 0, 0.25);
+                0 15px 40px
+                rgba(0, 0, 0, 0.25);
         }
 
+
         .icon {
+
             font-size: 40px;
+
             margin-bottom: 15px;
         }
 
+
         .card h3 {
+
             margin-bottom: 10px;
         }
 
+
         .card p {
+
             color: #9eafa4;
+
             line-height: 1.6;
         }
 
 
-        <!-- ================= PREDICTION HISTORY ================= -->
+        /* ================= HISTORY ================= */
 
-<section
-    id="history"
-    style="
-        padding:70px 7%;
-        text-align:center;
-    "
->
+        .history-section {
 
-    <h2
-        style="
-            font-size:36px;
-            margin-bottom:12px;
-        "
-    >
-        📜 Prediction History
-    </h2>
+            padding: 80px 7%;
 
-    <p
-        style="
-            color:#9eafa4;
-            margin-bottom:30px;
-        "
-    >
-        Your recent plant analysis results
-    </p>
+            text-align: center;
+
+            background:
+                rgba(5, 20, 11, 0.55);
+        }
 
 
-    <div
-        id="historyList"
-        style="
-            max-width:850px;
-            margin:auto;
-        "
-    ></div>
+        .history-section h2 {
+
+            font-size: 36px;
+
+            margin-bottom: 10px;
+        }
 
 
-    <button
-        onclick="clearHistory()"
-        style="
-            margin-top:25px;
-            padding:11px 20px;
-            border:1px solid #39784d;
-            border-radius:10px;
-            background:#0a1d11;
-            color:#8cf0a9;
-            cursor:pointer;
-            font-weight:bold;
-        "
-    >
-        🗑️ Clear History
-    </button>
+        .history-subtitle {
 
-</section>
+            color: #9eafa4;
+
+            margin-bottom: 35px;
+        }
+
+
+        #historyList {
+
+            max-width: 850px;
+
+            margin: auto;
+
+            text-align: left;
+        }
+
+
+        .empty-history {
+
+            padding: 35px 20px;
+
+            border:
+                1px dashed #39784d;
+
+            border-radius: 18px;
+
+            color: #718279;
+
+            background: #0a1d11;
+
+            text-align: center;
+        }
+
+
+        .history-item {
+
+            margin-bottom: 15px;
+
+            padding: 20px;
+
+            border:
+                1px solid #183b25;
+
+            border-radius: 16px;
+
+            background: #0a1d11;
+
+            transition: 0.3s;
+        }
+
+
+        .history-item:hover {
+
+            border-color: #39784d;
+
+            transform:
+                translateY(-2px);
+        }
+
+
+        .history-top {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: flex-start;
+
+            gap: 15px;
+        }
+
+
+        .history-crop {
+
+            color: #55e889;
+
+            font-weight: bold;
+
+            font-size: 17px;
+        }
+
+
+        .history-disease {
+
+            margin-top: 8px;
+
+            color: #ffffff;
+
+            font-size: 15px;
+        }
+
+
+        .history-confidence {
+
+            color: #55e889;
+
+            font-size: 20px;
+
+            font-weight: bold;
+
+            text-align: right;
+        }
+
+
+        .history-status {
+
+            color: #9eafa4;
+
+            font-size: 12px;
+
+            margin-top: 5px;
+
+            text-align: right;
+        }
+
+
+        .history-date {
+
+            margin-top: 12px;
+
+            color: #718279;
+
+            font-size: 11px;
+        }
+
+
+        .clear-history {
+
+            margin-top: 25px;
+
+            padding: 11px 20px;
+
+            border:
+                1px solid #39784d;
+
+            border-radius: 10px;
+
+            background: #0a1d11;
+
+            color: #8cf0a9;
+
+            cursor: pointer;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        .clear-history:hover {
+
+            background: #102c1a;
+        }
+
+
         /* ================= FOOTER ================= */
 
         footer {
+
             padding: 30px;
+
             text-align: center;
+
             color: #718279;
-            border-top: 1px solid #183b25;
+
+            border-top:
+                1px solid #183b25;
         }
 
+
         .footer-name {
+
             color: #55e889;
+
             font-weight: bold;
         }
 
@@ -496,57 +868,116 @@
         @media (max-width: 600px) {
 
             nav {
-                padding: 15px 18px;
+
+                padding:
+                    15px 18px;
             }
 
+
             .brand {
+
                 gap: 8px;
             }
 
+
             .logo {
+
                 font-size: 19px;
             }
 
+
             .creator-tag {
+
                 font-size: 7px;
+
                 padding: 5px 8px;
+
                 letter-spacing: 0.7px;
             }
 
+
             nav div:last-child {
+
                 display: none;
             }
 
+
             h1 {
+
                 font-size: 48px;
             }
 
+
             .hero {
+
                 min-height: 600px;
+
+                padding:
+                    60px 16px;
             }
 
+
             .hero p {
+
                 font-size: 16px;
             }
 
+
             .upload-box {
-                padding: 28px 18px;
+
+                padding:
+                    28px 18px;
             }
+
 
             .features {
-                padding: 65px 20px;
+
+                padding:
+                    65px 20px;
             }
 
-            .features h2 {
+
+            .features h2,
+            .history-section h2 {
+
                 font-size: 30px;
             }
 
+
+            .history-section {
+
+                padding:
+                    65px 20px;
+            }
+
+
+            .history-top {
+
+                flex-direction: column;
+            }
+
+
+            .history-confidence {
+
+                text-align: left;
+            }
+
+
+            .history-status {
+
+                text-align: left;
+            }
+
+
             .result-disease {
+
                 font-size: 19px;
             }
 
-            .ai-info-grid {
-                grid-template-columns: 1fr;
+
+            .result-section {
+
+                padding: 17px;
             }
 
         }
@@ -566,12 +997,17 @@
         <div class="brand">
 
             <div class="logo">
+
                 🌱 AgriVision
                 <span>AI</span>
+
             </div>
 
+
             <div class="creator-tag">
+
                 BY PRIYANSHU KUMAR
+
             </div>
 
         </div>
@@ -587,10 +1023,13 @@
                 Features
             </a>
 
+            <a href="#history">
+                History
+            </a>
+
         </div>
 
     </nav>
-
 
 
     <!-- ================= HERO ================= -->
@@ -601,7 +1040,9 @@
 
 
             <div class="badge">
+
                 🤖 AI-POWERED AGRICULTURE
+
             </div>
 
 
@@ -628,20 +1069,23 @@
             </p>
 
 
-
             <!-- ================= UPLOAD ================= -->
 
             <div class="upload-box">
 
 
                 <h2>
+
                     🌿 Analyze Your Plant
+
                 </h2>
 
 
                 <p>
+
                     Upload a clear image of a
                     plant leaf to begin AI analysis.
+
                 </p>
 
 
@@ -667,7 +1111,6 @@
     </section>
 
 
-
     <!-- ================= FEATURES ================= -->
 
     <section
@@ -676,7 +1119,9 @@
     >
 
         <h2>
+
             AI-Powered Features
+
         </h2>
 
 
@@ -694,9 +1139,11 @@
                 </h3>
 
                 <p>
+
                     Identify plant diseases
                     using computer vision
                     and deep learning.
+
                 </p>
 
             </div>
@@ -713,8 +1160,10 @@
                 </h3>
 
                 <p>
+
                     View the AI model's
                     prediction confidence.
+
                 </p>
 
             </div>
@@ -731,8 +1180,10 @@
                 </h3>
 
                 <p>
+
                     Analyze the health
                     condition of your plant.
+
                 </p>
 
             </div>
@@ -749,8 +1200,10 @@
                 </h3>
 
                 <p>
+
                     Receive useful information
                     for managing detected diseases.
+
                 </p>
 
             </div>
@@ -760,6 +1213,41 @@
 
     </section>
 
+
+    <!-- ================= PREDICTION HISTORY ================= -->
+
+    <section
+        class="history-section"
+        id="history"
+    >
+
+        <h2>
+
+            📜 Prediction History
+
+        </h2>
+
+
+        <p class="history-subtitle">
+
+            Your recent plant analysis results
+
+        </p>
+
+
+        <div id="historyList"></div>
+
+
+        <button
+            class="clear-history"
+            onclick="clearHistory()"
+        >
+
+            🗑️ Clear History
+
+        </button>
+
+    </section>
 
 
     <!-- ================= FOOTER ================= -->
@@ -773,45 +1261,52 @@
         Developed by
 
         <span class="footer-name">
+
             Priyanshu Kumar
+
         </span>
 
     </footer>
 
 
-
-    <!-- ================= AI PREDICTION SCRIPT ================= -->
+    <!-- ================= AI SCRIPT ================= -->
 
     <script>
 
+
         const leafImage =
-            document.getElementById("leafImage");
+            document.getElementById(
+                "leafImage"
+            );
+
 
         const aiResult =
-            document.getElementById("aiResult");
+            document.getElementById(
+                "aiResult"
+            );
 
 
-        /* ================= IMAGE UPLOAD ================= */
+        /* ================= FILE UPLOAD ================= */
 
         leafImage.addEventListener(
             "change",
             async function () {
 
+
                 const file =
                     this.files[0];
 
+
                 if (!file) {
+
                     return;
+
                 }
 
-
-                /* Show result */
 
                 aiResult.style.display =
                     "block";
 
-
-                /* Loading */
 
                 aiResult.innerHTML = `
 
@@ -834,18 +1329,15 @@
                 try {
 
 
-                    /* Form Data */
-
                     const formData =
                         new FormData();
+
 
                     formData.append(
                         "image",
                         file
                     );
 
-
-                    /* API Request */
 
                     const response =
                         await fetch(
@@ -857,11 +1349,19 @@
                         );
 
 
+                    if (!response.ok) {
+
+                        throw new Error(
+                            "Server returned HTTP " +
+                            response.status
+                        );
+
+                    }
+
+
                     const result =
                         await response.json();
 
-
-                    /* API Error */
 
                     if (!result.success) {
 
@@ -873,18 +1373,23 @@
                     }
 
 
-                    /* ================= DATA ================= */
+                    /* ================= RESULT DATA ================= */
 
                     const disease =
-                        result.disease || "Unknown";
+                        result.disease ||
+                        "Unknown";
+
 
                     const confidence =
                         Number(
                             result.confidence || 0
                         );
 
+
                     const crop =
-                        result.crop || "Unknown Crop";
+                        result.crop ||
+                        "Unknown Crop";
+
 
                     const status =
                         result.status ||
@@ -896,23 +1401,31 @@
                                 : "Needs Attention"
                         );
 
+
                     const symptoms =
-                        Array.isArray(result.symptoms)
+                        Array.isArray(
+                            result.symptoms
+                        )
                             ? result.symptoms
                             : [];
+
 
                     const recommendations =
                         Array.isArray(
                             result.recommendation
                         )
                             ? result.recommendation
-                            : []; 
-  savePredictionHistory(
-    crop,
-    disease,
-    confidence,
-    status
-);
+                            : [];
+
+
+                    /* ================= SAVE HISTORY ================= */
+
+                    savePredictionHistory(
+                        crop,
+                        disease,
+                        confidence,
+                        status
+                    );
 
 
                     /* ================= HEALTH ================= */
@@ -920,10 +1433,9 @@
                     const isHealthy =
                         status
                             .toLowerCase()
-                            .includes("healthy") ||
-                        disease
-                            .toLowerCase()
-                            .includes("healthy");
+                            .includes(
+                                "healthy"
+                            );
 
 
                     const healthIcon =
@@ -932,24 +1444,44 @@
                             : "⚠️";
 
 
+                    const healthStatus =
+                        isHealthy
+                            ? "Healthy Plant"
+                            : "Needs Attention";
+
+
                     /* ================= SYMPTOMS ================= */
 
                     const symptomsHTML =
                         symptoms.length > 0
 
-                        ? symptoms
-                            .map(
-                                item =>
-                                    `<li>${escapeHTML(item)}</li>`
-                            )
-                            .join("")
+                            ? `
 
-                        : `
-                            <li>
-                                No additional symptom
-                                information available.
-                            </li>
-                        `;
+                                <div class="info-card">
+
+                                    <h3>
+                                        🔎 Possible Symptoms
+                                    </h3>
+
+                                    <ul>
+
+                                        ${symptoms
+                                            .map(
+                                                item =>
+                                                    `<li>${escapeHTML(
+                                                        item
+                                                    )}</li>`
+                                            )
+                                            .join("")
+                                        }
+
+                                    </ul>
+
+                                </div>
+
+                            `
+
+                            : "";
 
 
                     /* ================= RECOMMENDATIONS ================= */
@@ -957,74 +1489,103 @@
                     const recommendationsHTML =
                         recommendations.length > 0
 
-                        ? recommendations
-                            .map(
-                                item =>
-                                    `<li>${escapeHTML(item)}</li>`
-                            )
-                            .join("")
+                            ? `
 
-                        : `
-                            <li>
-                                Follow normal plant
-                                monitoring practices.
-                            </li>
-                        `;
+                                <div class="info-card">
+
+                                    <h3>
+                                        💡 Recommended Care
+                                    </h3>
+
+                                    <ul>
+
+                                        ${recommendations
+                                            .map(
+                                                item =>
+                                                    `<li>${escapeHTML(
+                                                        item
+                                                    )}</li>`
+                                            )
+                                            .join("")
+                                        }
+
+                                    </ul>
+
+                                </div>
+
+                            `
+
+                            : "";
 
 
-                    /* ================= DISPLAY ================= */
+                    /* ================= RESULT UI ================= */
 
                     aiResult.innerHTML = `
 
                         <div class="result-icon">
+
                             ${healthIcon}
+
                         </div>
 
 
                         <h3 class="result-title">
+
                             AI Analysis Complete
+
                         </h3>
 
-
-                        <!-- MAIN RESULT -->
 
                         <div class="result-section">
 
 
                             <p class="result-label">
-                                Crop
+
+                                CROP
+
                             </p>
 
 
                             <div class="crop-badge">
-                                🌿 ${escapeHTML(crop)}
+
+                                🌿 ${escapeHTML(
+                                    crop
+                                )}
+
                             </div>
 
 
-                            <br><br>
-
-
                             <p class="result-label">
-                                Detected Condition
+
+                                DETECTED CONDITION
+
                             </p>
 
 
                             <h2 class="result-disease">
+
                                 ${escapeHTML(
                                     formatDiseaseName(
                                         disease
                                     )
                                 )}
+
                             </h2>
 
 
                             <p class="result-label">
-                                AI Confidence
+
+                                AI CONFIDENCE
+
                             </p>
 
 
                             <h2 class="confidence-value">
-                                ${confidence.toFixed(2)}%
+
+                                ${confidence.toFixed(
+                                    2
+                                )}%
+
                             </h2>
 
 
@@ -1035,7 +1596,8 @@
                                 <div
                                     class="confidence-fill"
                                     style="
-                                        width:${Math.min(
+                                        width:
+                                        ${Math.min(
                                             Math.max(
                                                 confidence,
                                                 0
@@ -1052,7 +1614,7 @@
 
                                 ${healthIcon}
 
-                                ${escapeHTML(status)}
+                                ${healthStatus}
 
                             </p>
 
@@ -1060,55 +1622,23 @@
                         </div>
 
 
-                        <!-- INFORMATION CARDS -->
-
-                        <div class="ai-info-grid">
+                        ${symptomsHTML}
 
 
-                            <!-- SYMPTOMS -->
+                        ${recommendationsHTML}
 
-                            <div class="info-card">
-
-                                <h4>
-                                    🔎 Possible Symptoms
-                                </h4>
-
-                                <ul>
-                                    ${symptomsHTML}
-                                </ul>
-
-                            </div>
-
-
-                            <!-- RECOMMENDATIONS -->
-
-                            <div class="info-card">
-
-                                <h4>
-                                    💡 Recommended Care
-                                </h4>
-
-                                <ul>
-                                    ${recommendationsHTML}
-                                </ul>
-
-                            </div>
-
-
-                        </div>
-
-
-                        <!-- DISCLAIMER -->
 
                         <div class="disclaimer">
 
                             ⚠️ <strong>Important:</strong>
-                            This AI result is a screening aid
-                            based on the uploaded image. It is
-                            not a guaranteed diagnosis. For
-                            important crop-health decisions,
-                            consider confirmation from a local
-                            agriculture expert.
+
+                            This AI result is a screening
+                            aid based on the uploaded image.
+                            It is not a guaranteed diagnosis.
+
+                            For important crop-health decisions,
+                            consider confirmation from a
+                            local agriculture expert.
 
                         </div>
 
@@ -1140,7 +1670,9 @@
                     aiResult.innerHTML = `
 
                         <div class="result-icon">
+
                             ❌
+
                         </div>
 
 
@@ -1154,7 +1686,9 @@
                         </h3>
 
 
-                        <p style="color:#b8cabe;">
+                        <p
+                            style="color:#b8cabe;"
+                        >
 
                             ${escapeHTML(
                                 error.message
@@ -1186,51 +1720,290 @@
             disease
         ) {
 
-            return disease
+            return String(disease)
+
                 .replaceAll(
                     "___",
                     " - "
                 )
+
                 .replaceAll(
                     "_",
                     " "
                 )
+
                 .replace(
                     /\s+/g,
                     " "
                 )
+
                 .trim();
 
         }
 
 
-        /* ================= SECURITY ================= */
+        /* ================= ESCAPE HTML ================= */
 
         function escapeHTML(
             value
         ) {
 
             return String(value)
-                .replace(
-                    /&/g,
+
+                .replaceAll(
+                    "&",
                     "&amp;"
                 )
-                .replace(
-                    /</g,
+
+                .replaceAll(
+                    "<",
                     "&lt;"
                 )
-                .replace(
-                    />/g,
+
+                .replaceAll(
+                    ">",
                     "&gt;"
                 )
-                .replace(
-                    /"/g,
+
+                .replaceAll(
+                    '"',
                     "&quot;"
                 )
-                .replace(
-                    /'/g,
+
+                .replaceAll(
+                    "'",
                     "&#039;"
                 );
+
+        }
+
+
+        /* ================= SAVE HISTORY ================= */
+
+        function savePredictionHistory(
+            crop,
+            disease,
+            confidence,
+            status
+        ) {
+
+
+            const history =
+                JSON.parse(
+                    localStorage.getItem(
+                        "agrivision_history"
+                    ) || "[]"
+                );
+
+
+            const record = {
+
+                crop:
+                    String(crop),
+
+                disease:
+                    formatDiseaseName(
+                        disease
+                    ),
+
+                confidence:
+                    Number(
+                        confidence
+                    ).toFixed(2),
+
+                status:
+                    String(status),
+
+                date:
+                    new Date()
+                        .toLocaleString()
+
+            };
+
+
+            history.unshift(
+                record
+            );
+
+
+            const limitedHistory =
+                history.slice(
+                    0,
+                    10
+                );
+
+
+            localStorage.setItem(
+                "agrivision_history",
+                JSON.stringify(
+                    limitedHistory
+                )
+            );
+
+
+            displayHistory();
+
+        }
+
+
+        /* ================= DISPLAY HISTORY ================= */
+
+        function displayHistory() {
+
+
+            const historyList =
+                document.getElementById(
+                    "historyList"
+                );
+
+
+            if (!historyList) {
+
+                return;
+
+            }
+
+
+            const history =
+                JSON.parse(
+                    localStorage.getItem(
+                        "agrivision_history"
+                    ) || "[]"
+                );
+
+
+            if (
+                !Array.isArray(history) ||
+                history.length === 0
+            ) {
+
+
+                historyList.innerHTML = `
+
+                    <div class="empty-history">
+
+                        🌱
+
+                        <br><br>
+
+                        No predictions yet.
+
+                        <br><br>
+
+                        Upload a plant image
+                        to create your first analysis.
+
+                    </div>
+
+                `;
+
+
+                return;
+
+            }
+
+
+            historyList.innerHTML =
+                history
+                    .map(
+                        item => `
+
+                            <div
+                                class="history-item"
+                            >
+
+                                <div
+                                    class="history-top"
+                                >
+
+                                    <div>
+
+                                        <div
+                                            class="history-crop"
+                                        >
+
+                                            🌿
+
+                                            ${escapeHTML(
+                                                item.crop
+                                            )}
+
+                                        </div>
+
+
+                                        <div
+                                            class="history-disease"
+                                        >
+
+                                            ${escapeHTML(
+                                                item.disease
+                                            )}
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div>
+
+                                        <div
+                                            class="history-confidence"
+                                        >
+
+                                            ${escapeHTML(
+                                                item.confidence
+                                            )}%
+
+                                        </div>
+
+
+                                        <div
+                                            class="history-status"
+                                        >
+
+                                            ${escapeHTML(
+                                                item.status
+                                            )}
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div
+                                    class="history-date"
+                                >
+
+                                    🕒
+
+                                    ${escapeHTML(
+                                        item.date
+                                    )}
+
+                                </div>
+
+                            </div>
+
+                        `
+                    )
+                    .join("");
+
+        }
+
+
+        /* ================= CLEAR HISTORY ================= */
+
+        function clearHistory() {
+
+
+            localStorage.removeItem(
+                "agrivision_history"
+            );
+
+
+            displayHistory();
 
         }
 
@@ -1239,243 +2012,26 @@
 
         function resetAnalysis() {
 
-            leafImage.value = "";
+
+            leafImage.value =
+                "";
+
 
             aiResult.style.display =
                 "none";
 
-            aiResult.innerHTML = "";
+
+            aiResult.innerHTML =
+                "";
 
         }
-/* ================= PREDICTION HISTORY ================= */
 
-function savePredictionHistory(
-    crop,
-    disease,
-    confidence,
-    status
-) {
 
-    const history =
-        JSON.parse(
-            localStorage.getItem(
-                "agrivision_history"
-            ) || "[]"
-        );
+        /* ================= LOAD HISTORY ================= */
 
+        displayHistory();
 
-    const record = {
 
-        crop: crop,
-
-        disease: formatDiseaseName(
-            disease
-        ),
-
-        confidence:
-            Number(confidence).toFixed(2),
-
-        status: status,
-
-        date:
-            new Date().toLocaleString()
-
-    };
-
-
-    history.unshift(record);
-
-
-    /* Keep latest 10 results */
-
-    const limitedHistory =
-        history.slice(0, 10);
-
-
-    localStorage.setItem(
-        "agrivision_history",
-        JSON.stringify(
-            limitedHistory
-        )
-    );
-
-
-    displayHistory();
-
-}
-
-
-/* ================= DISPLAY HISTORY ================= */
-
-function displayHistory() {
-
-    const historyList =
-        document.getElementById(
-            "historyList"
-        );
-
-
-    if (!historyList) {
-        return;
-    }
-
-
-    const history =
-        JSON.parse(
-            localStorage.getItem(
-                "agrivision_history"
-            ) || "[]"
-        );
-
-
-    if (history.length === 0) {
-
-        historyList.innerHTML = `
-
-            <div
-                style="
-                    padding:30px;
-                    border:1px dashed #39784d;
-                    border-radius:16px;
-                    color:#718279;
-                    background:#0a1d11;
-                "
-            >
-
-                🌱
-
-                <br><br>
-
-                No predictions yet.
-
-                <br>
-
-                Upload a plant image
-                to create your first analysis.
-
-            </div>
-
-        `;
-
-        return;
-
-    }
-
-
-    historyList.innerHTML =
-        history.map(
-            item => `
-
-                <div
-                    style="
-                        margin-bottom:14px;
-                        padding:20px;
-                        text-align:left;
-                        border:1px solid #183b25;
-                        border-radius:16px;
-                        background:#0a1d11;
-                    "
-                >
-
-                    <div
-                        style="
-                            display:flex;
-                            justify-content:space-between;
-                            gap:15px;
-                            flex-wrap:wrap;
-                        "
-                    >
-
-                        <div>
-
-                            <div
-                                style="
-                                    color:#55e889;
-                                    font-weight:bold;
-                                    font-size:17px;
-                                "
-                            >
-                                🌿 ${escapeHTML(item.crop)}
-                            </div>
-
-                            <div
-                                style="
-                                    margin-top:8px;
-                                    color:#ffffff;
-                                "
-                            >
-                                ${escapeHTML(item.disease)}
-                            </div>
-
-                        </div>
-
-
-                        <div
-                            style="
-                                text-align:right;
-                            "
-                        >
-
-                            <div
-                                style="
-                                    color:#55e889;
-                                    font-size:20px;
-                                    font-weight:bold;
-                                "
-                            >
-                                ${item.confidence}%
-                            </div>
-
-                            <div
-                                style="
-                                    color:#9eafa4;
-                                    font-size:12px;
-                                    margin-top:5px;
-                                "
-                            >
-                                ${escapeHTML(item.status)}
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div
-                        style="
-                            margin-top:12px;
-                            color:#718279;
-                            font-size:11px;
-                        "
-                    >
-                        🕒 ${escapeHTML(item.date)}
-                    </div>
-
-                </div>
-
-            `
-        )
-        .join("");
-
-}
-
-
-/* ================= CLEAR HISTORY ================= */
-
-function clearHistory() {
-
-    localStorage.removeItem(
-        "agrivision_history"
-    );
-
-    displayHistory();
-
-}
-
-
-/* ================= LOAD HISTORY ================= */
-
-displayHistory();
     </script>
 
 
