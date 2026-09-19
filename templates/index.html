@@ -5,24 +5,16 @@
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="AgriVision AI - AI-powered plant disease detection and crop health monitoring"
-    >
+    <meta name="description"
+          content="AgriVision AI - AI-powered plant disease detection and crop health monitoring">
 
-    <meta
-        name="theme-color"
-        content="#06130b"
-    >
+    <meta name="theme-color"
+          content="#06130b">
 
-    <title>
-        AgriVision AI | Plant Health Intelligence
-    </title>
+    <title>AgriVision AI | Plant Health Intelligence</title>
 
 
     <style>
@@ -33,122 +25,68 @@
             box-sizing: border-box;
         }
 
-
         html {
             scroll-behavior: smooth;
         }
 
-
         body {
-
-            font-family:
-                Arial,
-                Helvetica,
-                sans-serif;
-
+            font-family: Arial, Helvetica, sans-serif;
             background: #06130b;
-
             color: #ffffff;
-
             min-height: 100vh;
-
-            overflow-x: hidden;
         }
-
 
         /* ================= NAVBAR ================= */
 
         nav {
-
             display: flex;
-
             justify-content: space-between;
-
             align-items: center;
-
             padding: 18px 7%;
-
-            border-bottom:
-                1px solid #183b25;
-
-            background:
-                rgba(4, 18, 10, 0.97);
-
+            border-bottom: 1px solid #183b25;
+            background: rgba(4, 18, 10, 0.96);
             position: sticky;
-
             top: 0;
-
             z-index: 1000;
-
             backdrop-filter: blur(15px);
         }
 
-
         .brand {
-
             display: flex;
-
             align-items: center;
-
             gap: 12px;
         }
 
-
         .logo {
-
             font-size: 24px;
-
             font-weight: bold;
-
             white-space: nowrap;
         }
 
-
         .logo span {
-
             color: #55e889;
         }
 
-
         .creator-tag {
-
             padding: 6px 11px;
-
-            border:
-                1px solid
-                rgba(85, 232, 137, 0.35);
-
+            border: 1px solid rgba(85, 232, 137, 0.35);
             border-radius: 20px;
-
-            background:
-                rgba(85, 232, 137, 0.08);
-
+            background: rgba(85, 232, 137, 0.08);
             color: #8cf0a9;
-
             font-size: 9px;
-
             letter-spacing: 1px;
-
             font-weight: bold;
-
             white-space: nowrap;
         }
 
-
         nav a {
-
             color: #b8cabe;
-
             text-decoration: none;
-
             margin-left: 25px;
-
             transition: 0.3s;
         }
 
-
         nav a:hover {
-
             color: #55e889;
         }
 
@@ -156,21 +94,13 @@
         /* ================= HERO ================= */
 
         .hero {
-
             min-height: 650px;
-
             display: flex;
-
             justify-content: center;
-
             align-items: center;
-
             text-align: center;
-
             padding: 70px 20px;
-
             background:
-
                 radial-gradient(
                     circle at center,
                     rgba(53, 180, 91, 0.20),
@@ -178,64 +108,37 @@
                 );
         }
 
-
         .hero-content {
-
             width: 100%;
-
             max-width: 850px;
         }
 
-
         .badge {
-
             display: inline-block;
-
             padding: 9px 18px;
-
-            border:
-                1px solid #2c7042;
-
+            border: 1px solid #2c7042;
             border-radius: 30px;
-
             color: #73e99a;
-
             font-size: 13px;
-
             margin-bottom: 25px;
-
-            background:
-                rgba(85, 232, 137, 0.05);
+            background: rgba(85, 232, 137, 0.05);
         }
-
 
         h1 {
-
-            font-size:
-                clamp(45px, 8vw, 82px);
-
+            font-size: clamp(45px, 8vw, 82px);
             line-height: 1.05;
-
             margin-bottom: 25px;
         }
 
-
         h1 span {
-
             color: #55e889;
         }
 
-
         .hero p {
-
             color: #aebdb3;
-
             font-size: 18px;
-
             line-height: 1.7;
-
             max-width: 680px;
-
             margin: auto;
         }
 
@@ -243,70 +146,37 @@
         /* ================= UPLOAD ================= */
 
         .upload-box {
-
-            margin:
-                40px auto 0;
-
+            margin: 40px auto 0;
             max-width: 600px;
-
             padding: 35px;
-
-            border:
-                1px dashed #39784d;
-
+            border: 1px dashed #39784d;
             border-radius: 22px;
-
-            background:
-                rgba(255, 255, 255, 0.04);
-
+            background: rgba(255, 255, 255, 0.04);
             transition: 0.3s;
         }
 
-
         .upload-box:hover {
-
             border-color: #55e889;
-
-            transform:
-                translateY(-3px);
-
-            box-shadow:
-                0 15px 40px
-                rgba(0, 0, 0, 0.25);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
         }
 
-
         .upload-box h2 {
-
             margin-bottom: 10px;
         }
 
-
-        .upload-box > p {
-
+        .upload-box p {
             margin-bottom: 25px;
-
             font-size: 15px;
-
-            color: #aebdb3;
         }
 
-
         input[type="file"] {
-
             width: 100%;
-
             padding: 15px;
-
             color: #cfe5d5;
-
             background: #0c2114;
-
-            border:
-                1px solid #214b2e;
-
+            border: 1px solid #214b2e;
             border-radius: 12px;
-
             cursor: pointer;
         }
 
@@ -314,551 +184,403 @@
         /* ================= RESULT ================= */
 
         #aiResult {
-
             margin-top: 25px;
-
             padding: 25px;
-
-            border:
-                1px solid #39784d;
-
+            border: 1px solid #39784d;
             border-radius: 18px;
-
             background: #0a1d11;
-
             color: #ffffff;
-
             text-align: center;
-
-            animation:
-                resultAppear 0.5s ease;
+            animation: resultAppear 0.5s ease;
         }
-
 
         @keyframes resultAppear {
 
             from {
-
                 opacity: 0;
-
-                transform:
-                    translateY(15px);
+                transform: translateY(15px);
             }
 
             to {
-
                 opacity: 1;
-
-                transform:
-                    translateY(0);
+                transform: translateY(0);
             }
+
         }
 
-
         .result-icon {
-
             font-size: 45px;
-
             margin-bottom: 8px;
         }
 
-
         .result-title {
-
             margin: 12px 0;
-
             font-size: 24px;
-
             color: #55e889;
         }
 
-
         .result-section {
-
             margin-top: 20px;
-
             padding: 20px;
-
             border-radius: 15px;
-
             background: #06130b;
         }
 
-
         .result-label {
-
             color: #9eafa4;
-
             margin-bottom: 8px;
-
-            font-size: 13px;
-
-            letter-spacing: 1px;
         }
 
-
         .result-disease {
-
             margin-bottom: 20px;
-
             font-size: 22px;
-
             word-break: break-word;
         }
 
-
         .crop-badge {
-
             display: inline-block;
-
-            padding: 8px 14px;
-
+            padding: 8px 15px;
             margin-bottom: 20px;
-
-            border:
-                1px solid #28663b;
-
             border-radius: 30px;
-
-            background:
-                rgba(85, 232, 137, 0.10);
-
-            color: #8cf0a9;
-
+            background: rgba(85, 232, 137, 0.12);
+            border: 1px solid #245d38;
+            color: #55e889;
             font-weight: bold;
-
-            font-size: 14px;
         }
 
-
         .confidence-value {
-
             color: #55e889;
-
             font-size: 28px;
         }
 
-
         .confidence-bar {
-
             margin-top: 15px;
-
             height: 10px;
-
             background: #183b25;
-
             border-radius: 10px;
-
             overflow: hidden;
         }
 
-
         .confidence-fill {
-
             height: 100%;
-
             background: #55e889;
-
             border-radius: 10px;
-
-            transition:
-                width 1s ease;
+            transition: width 1s ease;
         }
 
-
         .health-status {
-
             margin-top: 20px;
-
             color: #b8cabe;
-
             font-size: 16px;
         }
 
 
-        /* ================= INFO CARDS ================= */
+        /* ================= INFO BOXES ================= */
 
-        .info-card {
-
+        .info-box {
             margin-top: 18px;
-
             padding: 20px;
-
-            border:
-                1px solid #183b25;
-
             border-radius: 15px;
-
-            background: #07170d;
-
+            background: #07180e;
+            border: 1px solid #183b25;
             text-align: left;
         }
 
-
-        .info-card h3 {
-
+        .info-box h3 {
             color: #55e889;
-
-            font-size: 16px;
-
             margin-bottom: 12px;
+            font-size: 17px;
         }
 
-
-        .info-card ul {
-
+        .info-box ul {
             padding-left: 20px;
         }
 
-
-        .info-card li {
-
+        .info-box li {
             color: #b8cabe;
-
-            line-height: 1.6;
-
-            margin-bottom: 8px;
-
-            font-size: 14px;
+            margin-bottom: 9px;
+            line-height: 1.5;
         }
-
 
         .disclaimer {
-
             margin-top: 18px;
-
-            padding: 14px;
-
-            border:
-                1px solid #665d1c;
-
-            border-radius: 12px;
-
-            background:
-                rgba(150, 130, 20, 0.10);
-
-            color: #c9c29b;
-
+            padding: 15px;
+            border-radius: 10px;
+            background: rgba(180, 150, 40, 0.10);
+            border: 1px solid rgba(180, 150, 40, 0.30);
+            color: #c7c0a0;
             font-size: 12px;
-
             line-height: 1.5;
-
-            text-align: left;
         }
 
 
+        /* ================= BUTTON ================= */
+
         .reset-button {
-
             margin-top: 20px;
-
             padding: 12px 22px;
-
             border: none;
-
             border-radius: 10px;
-
             background: #55e889;
-
             color: #06130b;
-
             font-weight: bold;
-
             cursor: pointer;
-
             transition: 0.3s;
         }
 
-
         .reset-button:hover {
-
-            transform:
-                translateY(-2px);
-
-            box-shadow:
-                0 8px 20px
-                rgba(85, 232, 137, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(85, 232, 137, 0.2);
         }
 
 
         /* ================= FEATURES ================= */
 
         .features {
-
             padding: 80px 7%;
-
             text-align: center;
         }
 
-
         .features h2 {
-
             font-size: 36px;
-
             margin-bottom: 40px;
         }
 
-
         .grid {
-
             display: grid;
-
-            grid-template-columns:
-                repeat(
-                    auto-fit,
-                    minmax(210px, 1fr)
-                );
-
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(210px, 1fr)
+            );
             gap: 20px;
         }
 
-
         .card {
-
             padding: 30px 20px;
-
-            border:
-                1px solid #183b25;
-
+            border: 1px solid #183b25;
             border-radius: 20px;
-
             background: #0a1d11;
-
             transition: 0.3s;
         }
 
-
         .card:hover {
-
-            transform:
-                translateY(-7px);
-
-            border-color:
-                #39784d;
-
-            box-shadow:
-                0 15px 40px
-                rgba(0, 0, 0, 0.25);
+            transform: translateY(-7px);
+            border-color: #39784d;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
         }
 
-
         .icon {
-
             font-size: 40px;
-
             margin-bottom: 15px;
         }
 
-
         .card h3 {
-
             margin-bottom: 10px;
         }
 
-
         .card p {
-
             color: #9eafa4;
-
             line-height: 1.6;
         }
 
 
         /* ================= HISTORY ================= */
 
-        .history-section {
-
+        #history {
             padding: 80px 7%;
-
             text-align: center;
-
-            background:
-                rgba(5, 20, 11, 0.55);
+            border-top: 1px solid #183b25;
         }
 
-
-        .history-section h2 {
-
+        #history h2 {
             font-size: 36px;
-
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
-
 
         .history-subtitle {
-
             color: #9eafa4;
-
             margin-bottom: 35px;
-        }
-
-
-        #historyList {
-
-            max-width: 850px;
-
-            margin: auto;
-
-            text-align: left;
-        }
-
-
-        .empty-history {
-
-            padding: 35px 20px;
-
-            border:
-                1px dashed #39784d;
-
-            border-radius: 18px;
-
-            color: #718279;
-
-            background: #0a1d11;
-
-            text-align: center;
-        }
-
-
-        .history-item {
-
-            margin-bottom: 15px;
-
-            padding: 20px;
-
-            border:
-                1px solid #183b25;
-
-            border-radius: 16px;
-
-            background: #0a1d11;
-
-            transition: 0.3s;
-        }
-
-
-        .history-item:hover {
-
-            border-color: #39784d;
-
-            transform:
-                translateY(-2px);
-        }
-
-
-        .history-top {
-
-            display: flex;
-
-            justify-content: space-between;
-
-            align-items: flex-start;
-
-            gap: 15px;
-        }
-
-
-        .history-crop {
-
-            color: #55e889;
-
-            font-weight: bold;
-
             font-size: 17px;
         }
 
-
-        .history-disease {
-
-            margin-top: 8px;
-
-            color: #ffffff;
-
-            font-size: 15px;
+        #historyList {
+            max-width: 850px;
+            margin: auto;
         }
 
-
-        .history-confidence {
-
-            color: #55e889;
-
-            font-size: 20px;
-
-            font-weight: bold;
-
-            text-align: right;
-        }
-
-
-        .history-status {
-
-            color: #9eafa4;
-
-            font-size: 12px;
-
-            margin-top: 5px;
-
-            text-align: right;
-        }
-
-
-        .history-date {
-
-            margin-top: 12px;
-
-            color: #718279;
-
-            font-size: 11px;
-        }
-
-
-        .clear-history {
-
-            margin-top: 25px;
-
-            padding: 11px 20px;
-
-            border:
-                1px solid #39784d;
-
-            border-radius: 10px;
-
+        .history-card {
+            text-align: left;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid #183b25;
+            border-radius: 20px;
             background: #0a1d11;
-
-            color: #8cf0a9;
-
-            cursor: pointer;
-
-            font-weight: bold;
-
             transition: 0.3s;
         }
 
+        .history-card:hover {
+            transform: translateY(-4px);
+            border-color: #39784d;
+        }
+
+        .history-crop {
+            color: #55e889;
+            font-size: 23px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .history-disease {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .history-confidence {
+            color: #55e889;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .history-status {
+            color: #aebdb3;
+            margin-top: 5px;
+        }
+
+        .history-time {
+            color: #718279;
+            margin-top: 12px;
+            font-size: 13px;
+        }
+
+        .history-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 18px;
+        }
+
+        .history-btn {
+            padding: 9px 15px;
+            border-radius: 9px;
+            cursor: pointer;
+            font-weight: bold;
+            border: 1px solid #39784d;
+            background: transparent;
+            color: #55e889;
+        }
+
+        .history-btn:hover {
+            background: rgba(85, 232, 137, 0.10);
+        }
+
+        .delete-btn {
+            color: #ff8585;
+            border-color: #713d3d;
+        }
+
+        .delete-btn:hover {
+            background: rgba(255, 80, 80, 0.08);
+        }
+
+        .clear-history {
+            margin-top: 20px;
+            padding: 13px 22px;
+            border-radius: 12px;
+            border: 1px solid #39784d;
+            background: transparent;
+            color: #73e99a;
+            font-weight: bold;
+            cursor: pointer;
+        }
 
         .clear-history:hover {
+            background: rgba(85, 232, 137, 0.08);
+        }
 
-            background: #102c1a;
+        .empty-history {
+            padding: 40px 20px;
+            border: 1px dashed #285a38;
+            border-radius: 18px;
+            color: #718279;
+        }
+
+
+        /* ================= MODAL ================= */
+
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.75);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 2000;
+        }
+
+        .modal-content {
+            width: 100%;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 28px;
+            border: 1px solid #39784d;
+            border-radius: 20px;
+            background: #0a1d11;
+            position: relative;
+        }
+
+        .modal-content h2 {
+            color: #55e889;
+            margin-bottom: 20px;
+        }
+
+        .modal-close {
+            position: absolute;
+            right: 18px;
+            top: 14px;
+            border: none;
+            background: transparent;
+            color: #ffffff;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .modal-section {
+            margin-top: 18px;
+            padding: 18px;
+            border-radius: 14px;
+            background: #06130b;
+            border: 1px solid #183b25;
+        }
+
+        .modal-section h3 {
+            color: #55e889;
+            margin-bottom: 10px;
+        }
+
+        .modal-section ul {
+            padding-left: 20px;
+        }
+
+        .modal-section li {
+            color: #b8cabe;
+            margin-bottom: 8px;
+            line-height: 1.5;
         }
 
 
         /* ================= FOOTER ================= */
 
         footer {
-
             padding: 30px;
-
             text-align: center;
-
             color: #718279;
-
-            border-top:
-                1px solid #183b25;
+            border-top: 1px solid #183b25;
         }
 
-
         .footer-name {
-
             color: #55e889;
-
             font-weight: bold;
         }
 
@@ -868,116 +590,62 @@
         @media (max-width: 600px) {
 
             nav {
-
-                padding:
-                    15px 18px;
+                padding: 15px 18px;
             }
 
-
             .brand {
-
                 gap: 8px;
             }
 
-
             .logo {
-
                 font-size: 19px;
             }
 
-
             .creator-tag {
-
                 font-size: 7px;
-
                 padding: 5px 8px;
-
                 letter-spacing: 0.7px;
             }
 
-
             nav div:last-child {
-
                 display: none;
             }
 
-
             h1 {
-
                 font-size: 48px;
             }
 
-
             .hero {
-
                 min-height: 600px;
-
-                padding:
-                    60px 16px;
             }
 
-
             .hero p {
-
                 font-size: 16px;
             }
 
-
             .upload-box {
-
-                padding:
-                    28px 18px;
+                padding: 28px 18px;
             }
-
 
             .features {
-
-                padding:
-                    65px 20px;
+                padding: 65px 20px;
             }
 
-
             .features h2,
-            .history-section h2 {
-
+            #history h2 {
                 font-size: 30px;
             }
 
-
-            .history-section {
-
-                padding:
-                    65px 20px;
-            }
-
-
-            .history-top {
-
-                flex-direction: column;
-            }
-
-
-            .history-confidence {
-
-                text-align: left;
-            }
-
-
-            .history-status {
-
-                text-align: left;
-            }
-
-
             .result-disease {
-
                 font-size: 19px;
             }
 
+            #history {
+                padding: 65px 20px;
+            }
 
-            .result-section {
-
-                padding: 17px;
+            .history-card {
+                padding: 20px;
             }
 
         }
@@ -997,17 +665,11 @@
         <div class="brand">
 
             <div class="logo">
-
-                🌱 AgriVision
-                <span>AI</span>
-
+                🌱 AgriVision <span>AI</span>
             </div>
 
-
             <div class="creator-tag">
-
                 BY PRIYANSHU KUMAR
-
             </div>
 
         </div>
@@ -1032,62 +694,44 @@
     </nav>
 
 
+
     <!-- ================= HERO ================= -->
 
     <section class="hero">
 
         <div class="hero-content">
 
-
             <div class="badge">
-
                 🤖 AI-POWERED AGRICULTURE
-
             </div>
 
-
             <h1>
-
                 Plant Health
-
-                <span>
-                    Intelligence
-                </span>
-
+                <span>Intelligence</span>
             </h1>
 
-
             <p>
-
                 Detect plant diseases using
                 Artificial Intelligence and
                 Computer Vision.
-
                 Upload a leaf image and
                 analyze crop health instantly.
-
             </p>
+
 
 
             <!-- ================= UPLOAD ================= -->
 
             <div class="upload-box">
 
-
                 <h2>
-
                     🌿 Analyze Your Plant
-
                 </h2>
 
-
                 <p>
-
                     Upload a clear image of a
                     plant leaf to begin AI analysis.
-
                 </p>
-
 
                 <input
                     type="file"
@@ -1103,12 +747,12 @@
                     style="display:none;"
                 ></div>
 
-
             </div>
 
         </div>
 
     </section>
+
 
 
     <!-- ================= FEATURES ================= -->
@@ -1119,11 +763,8 @@
     >
 
         <h2>
-
             AI-Powered Features
-
         </h2>
-
 
         <div class="grid">
 
@@ -1139,11 +780,9 @@
                 </h3>
 
                 <p>
-
                     Identify plant diseases
                     using computer vision
                     and deep learning.
-
                 </p>
 
             </div>
@@ -1160,10 +799,8 @@
                 </h3>
 
                 <p>
-
                     View the AI model's
                     prediction confidence.
-
                 </p>
 
             </div>
@@ -1180,10 +817,8 @@
                 </h3>
 
                 <p>
-
                     Analyze the health
                     condition of your plant.
-
                 </p>
 
             </div>
@@ -1200,38 +835,28 @@
                 </h3>
 
                 <p>
-
                     Receive useful information
                     for managing detected diseases.
-
                 </p>
 
             </div>
-
 
         </div>
 
     </section>
 
 
+
     <!-- ================= PREDICTION HISTORY ================= -->
 
-    <section
-        class="history-section"
-        id="history"
-    >
+    <section id="history">
 
         <h2>
-
             📜 Prediction History
-
         </h2>
 
-
         <p class="history-subtitle">
-
             Your recent plant analysis results
-
         </p>
 
 
@@ -1242,12 +867,40 @@
             class="clear-history"
             onclick="clearHistory()"
         >
-
             🗑️ Clear History
-
         </button>
 
     </section>
+
+
+
+    <!-- ================= DETAILS MODAL ================= -->
+
+    <div
+        class="modal"
+        id="detailsModal"
+        onclick="closeModalOutside(event)"
+    >
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                onclick="closeDetails()"
+            >
+                ✕
+            </button>
+
+            <h2>
+                🌿 Analysis Details
+            </h2>
+
+            <div id="modalBody"></div>
+
+        </div>
+
+    </div>
+
 
 
     <!-- ================= FOOTER ================= -->
@@ -1261,32 +914,620 @@
         Developed by
 
         <span class="footer-name">
-
             Priyanshu Kumar
-
         </span>
 
     </footer>
 
 
-    <!-- ================= AI SCRIPT ================= -->
+
+    <!-- ================= JAVASCRIPT ================= -->
 
     <script>
 
-
         const leafImage =
-            document.getElementById(
-                "leafImage"
-            );
-
+            document.getElementById("leafImage");
 
         const aiResult =
-            document.getElementById(
-                "aiResult"
+            document.getElementById("aiResult");
+
+        const historyList =
+            document.getElementById("historyList");
+
+        const detailsModal =
+            document.getElementById("detailsModal");
+
+        const modalBody =
+            document.getElementById("modalBody");
+
+
+        /* ==========================================
+           SAFE HTML
+        ========================================== */
+
+        function escapeHTML(value) {
+
+            if (value === null ||
+                value === undefined) {
+
+                return "";
+
+            }
+
+            return String(value)
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+
+        }
+
+
+        /* ==========================================
+           FORMAT DISEASE NAME
+        ========================================== */
+
+        function formatDiseaseName(disease) {
+
+            return String(disease || "")
+                .replace(/___/g, " - ")
+                .replace(/_/g, " ")
+                .replace(/\s+/g, " ")
+                .trim();
+
+        }
+
+
+        /* ==========================================
+           LOCAL STORAGE
+        ========================================== */
+
+        function getHistory() {
+
+            try {
+
+                return JSON.parse(
+                    localStorage.getItem(
+                        "agrivision_history"
+                    )
+                ) || [];
+
+            } catch (error) {
+
+                return [];
+
+            }
+
+        }
+
+
+        function savePredictionHistory(
+            crop,
+            disease,
+            confidence,
+            status,
+            symptoms,
+            recommendations
+        ) {
+
+            const history =
+                getHistory();
+
+            const item = {
+
+                id:
+                    Date.now(),
+
+                crop:
+                    crop || "Unknown",
+
+                disease:
+                    disease || "Unknown",
+
+                confidence:
+                    confidence || 0,
+
+                status:
+                    status || "Needs Attention",
+
+                symptoms:
+                    Array.isArray(symptoms)
+                        ? symptoms
+                        : [],
+
+                recommendations:
+                    Array.isArray(recommendations)
+                        ? recommendations
+                        : [],
+
+                time:
+                    new Date().toISOString()
+
+            };
+
+
+            history.unshift(item);
+
+
+            /* Keep latest 20 */
+
+            const limitedHistory =
+                history.slice(0, 20);
+
+
+            localStorage.setItem(
+                "agrivision_history",
+                JSON.stringify(
+                    limitedHistory
+                )
             );
 
 
-        /* ================= FILE UPLOAD ================= */
+            displayHistory();
+
+        }
+
+
+        /* ==========================================
+           DISPLAY HISTORY
+        ========================================== */
+
+        function displayHistory() {
+
+            const history =
+                getHistory();
+
+
+            if (history.length === 0) {
+
+                historyList.innerHTML = `
+
+                    <div class="empty-history">
+
+                        🌱
+
+                        <br><br>
+
+                        No prediction history yet.
+
+                        <br>
+
+                        Upload a plant image
+                        to create your first analysis.
+
+                    </div>
+
+                `;
+
+                return;
+
+            }
+
+
+            historyList.innerHTML =
+                history.map(
+                    (item, index) => {
+
+                        const healthy =
+                            String(
+                                item.status || ""
+                            )
+                            .toLowerCase()
+                            .includes(
+                                "healthy"
+                            );
+
+
+                        const icon =
+                            healthy
+                                ? "🌱"
+                                : "⚠️";
+
+
+                        const date =
+                            new Date(
+                                item.time
+                            ).toLocaleString();
+
+
+                        return `
+
+                            <div
+                                class="history-card"
+                            >
+
+                                <div
+                                    class="history-crop"
+                                >
+
+                                    🌿
+                                    ${escapeHTML(
+                                        item.crop
+                                    )}
+
+                                </div>
+
+
+                                <div
+                                    class="history-disease"
+                                >
+
+                                    ${escapeHTML(
+                                        formatDiseaseName(
+                                            item.disease
+                                        )
+                                    )}
+
+                                </div>
+
+
+                                <div
+                                    class="history-confidence"
+                                >
+
+                                    ${escapeHTML(
+                                        item.confidence
+                                    )}%
+
+                                </div>
+
+
+                                <div
+                                    class="history-status"
+                                >
+
+                                    ${icon}
+                                    ${escapeHTML(
+                                        item.status
+                                    )}
+
+                                </div>
+
+
+                                <div
+                                    class="history-time"
+                                >
+
+                                    🕒 ${escapeHTML(
+                                        date
+                                    )}
+
+                                </div>
+
+
+                                <div
+                                    class="history-actions"
+                                >
+
+                                    <button
+                                        class="history-btn"
+                                        onclick="
+                                            viewDetails(
+                                                ${index}
+                                            )
+                                        "
+                                    >
+
+                                        👁️ View Details
+
+                                    </button>
+
+
+                                    <button
+                                        class="
+                                            history-btn
+                                            delete-btn
+                                        "
+                                        onclick="
+                                            deleteHistory(
+                                                ${index}
+                                            )
+                                        "
+                                    >
+
+                                        🗑️ Delete
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        `;
+
+                    }
+                )
+                .join("");
+
+        }
+
+
+        /* ==========================================
+           VIEW DETAILS
+        ========================================== */
+
+        function viewDetails(index) {
+
+            const history =
+                getHistory();
+
+            const item =
+                history[index];
+
+
+            if (!item) {
+
+                return;
+
+            }
+
+
+            const symptoms =
+                Array.isArray(
+                    item.symptoms
+                )
+                    ? item.symptoms
+                    : [];
+
+
+            const recommendations =
+                Array.isArray(
+                    item.recommendations
+                )
+                    ? item.recommendations
+                    : [];
+
+
+            modalBody.innerHTML = `
+
+                <div
+                    class="modal-section"
+                >
+
+                    <h3>
+                        🌱 Crop
+                    </h3>
+
+                    <p>
+                        ${escapeHTML(
+                            item.crop
+                        )}
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="modal-section"
+                >
+
+                    <h3>
+                        🔬 Detected Condition
+                    </h3>
+
+                    <p>
+                        ${escapeHTML(
+                            formatDiseaseName(
+                                item.disease
+                            )
+                        )}
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="modal-section"
+                >
+
+                    <h3>
+                        📊 AI Confidence
+                    </h3>
+
+                    <p>
+                        ${escapeHTML(
+                            item.confidence
+                        )}%
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="modal-section"
+                >
+
+                    <h3>
+                        ⚠️ Health Status
+                    </h3>
+
+                    <p>
+                        ${escapeHTML(
+                            item.status
+                        )}
+                    </p>
+
+                </div>
+
+
+                ${
+                    symptoms.length
+                    ? `
+
+                        <div
+                            class="modal-section"
+                        >
+
+                            <h3>
+                                🔎 Possible Symptoms
+                            </h3>
+
+                            <ul>
+
+                                ${symptoms.map(
+                                    symptom => `
+                                        <li>
+                                            ${escapeHTML(
+                                                symptom
+                                            )}
+                                        </li>
+                                    `
+                                ).join("")}
+
+                            </ul>
+
+                        </div>
+
+                    `
+                    : ""
+                }
+
+
+                ${
+                    recommendations.length
+                    ? `
+
+                        <div
+                            class="modal-section"
+                        >
+
+                            <h3>
+                                💡 Recommended Care
+                            </h3>
+
+                            <ul>
+
+                                ${recommendations.map(
+                                    recommendation => `
+                                        <li>
+                                            ${escapeHTML(
+                                                recommendation
+                                            )}
+                                        </li>
+                                    `
+                                ).join("")}
+
+                            </ul>
+
+                        </div>
+
+                    `
+                    : ""
+                }
+
+            `;
+
+
+            detailsModal.style.display =
+                "flex";
+
+        }
+
+
+        /* ==========================================
+           CLOSE MODAL
+        ========================================== */
+
+        function closeDetails() {
+
+            detailsModal.style.display =
+                "none";
+
+        }
+
+
+        function closeModalOutside(event) {
+
+            if (
+                event.target ===
+                detailsModal
+            ) {
+
+                closeDetails();
+
+            }
+
+        }
+
+
+        /* ==========================================
+           DELETE HISTORY
+        ========================================== */
+
+        function deleteHistory(index) {
+
+            const history =
+                getHistory();
+
+
+            if (!history[index]) {
+
+                return;
+
+            }
+
+
+            history.splice(
+                index,
+                1
+            );
+
+
+            localStorage.setItem(
+                "agrivision_history",
+                JSON.stringify(history)
+            );
+
+
+            displayHistory();
+
+        }
+
+
+        /* ==========================================
+           CLEAR HISTORY
+        ========================================== */
+
+        function clearHistory() {
+
+            const history =
+                getHistory();
+
+
+            if (history.length === 0) {
+
+                return;
+
+            }
+
+
+            const confirmed =
+                confirm(
+                    "Clear all prediction history?"
+                );
+
+
+            if (!confirmed) {
+
+                return;
+
+            }
+
+
+            localStorage.removeItem(
+                "agrivision_history"
+            );
+
+
+            displayHistory();
+
+        }
+
+
+        /* ==========================================
+           IMAGE UPLOAD
+        ========================================== */
 
         leafImage.addEventListener(
             "change",
@@ -1304,9 +1545,13 @@
                 }
 
 
+                /* Show result */
+
                 aiResult.style.display =
                     "block";
 
+
+                /* Loading */
 
                 aiResult.innerHTML = `
 
@@ -1329,6 +1574,8 @@
                 try {
 
 
+                    /* Form data */
+
                     const formData =
                         new FormData();
 
@@ -1338,6 +1585,8 @@
                         file
                     );
 
+
+                    /* API request */
 
                     const response =
                         await fetch(
@@ -1349,21 +1598,12 @@
                         );
 
 
-                    if (!response.ok) {
-
-                        throw new Error(
-                            "Server returned HTTP " +
-                            response.status
-                        );
-
-                    }
-
-
                     const result =
                         await response.json();
 
 
-                    if (!result.success) {
+                    if (!response.ok ||
+                        !result.success) {
 
                         throw new Error(
                             result.error ||
@@ -1373,7 +1613,7 @@
                     }
 
 
-                    /* ================= RESULT DATA ================= */
+                    /* Data */
 
                     const disease =
                         result.disease ||
@@ -1418,18 +1658,6 @@
                             : [];
 
 
-                    /* ================= SAVE HISTORY ================= */
-
-                    savePredictionHistory(
-                        crop,
-                        disease,
-                        confidence,
-                        status
-                    );
-
-
-                    /* ================= HEALTH ================= */
-
                     const isHealthy =
                         status
                             .toLowerCase()
@@ -1444,81 +1672,87 @@
                             : "⚠️";
 
 
-                    const healthStatus =
-                        isHealthy
-                            ? "Healthy Plant"
-                            : "Needs Attention";
+                    /* Save */
+
+                    savePredictionHistory(
+                        crop,
+                        disease,
+                        confidence,
+                        status,
+                        symptoms,
+                        recommendations
+                    );
 
 
-                    /* ================= SYMPTOMS ================= */
+                    /* Symptoms HTML */
 
                     const symptomsHTML =
-                        symptoms.length > 0
+                        symptoms.length
+                        ? `
 
-                            ? `
+                            <div
+                                class="info-box"
+                            >
 
-                                <div class="info-card">
+                                <h3>
+                                    🔎 Possible Symptoms
+                                </h3>
 
-                                    <h3>
-                                        🔎 Possible Symptoms
-                                    </h3>
+                                <ul>
 
-                                    <ul>
+                                    ${symptoms.map(
+                                        symptom => `
+                                            <li>
+                                                ${escapeHTML(
+                                                    symptom
+                                                )}
+                                            </li>
+                                        `
+                                    ).join("")}
 
-                                        ${symptoms
-                                            .map(
-                                                item =>
-                                                    `<li>${escapeHTML(
-                                                        item
-                                                    )}</li>`
-                                            )
-                                            .join("")
-                                        }
+                                </ul>
 
-                                    </ul>
+                            </div>
 
-                                </div>
-
-                            `
-
-                            : "";
+                        `
+                        : "";
 
 
-                    /* ================= RECOMMENDATIONS ================= */
+                    /* Recommendations HTML */
 
                     const recommendationsHTML =
-                        recommendations.length > 0
+                        recommendations.length
+                        ? `
 
-                            ? `
+                            <div
+                                class="info-box"
+                            >
 
-                                <div class="info-card">
+                                <h3>
+                                    💡 Recommended Care
+                                </h3>
 
-                                    <h3>
-                                        💡 Recommended Care
-                                    </h3>
+                                <ul>
 
-                                    <ul>
+                                    ${recommendations.map(
+                                        recommendation => `
+                                            <li>
+                                                ${escapeHTML(
+                                                    recommendation
+                                                )}
+                                            </li>
+                                        `
+                                    ).join("")}
 
-                                        ${recommendations
-                                            .map(
-                                                item =>
-                                                    `<li>${escapeHTML(
-                                                        item
-                                                    )}</li>`
-                                            )
-                                            .join("")
-                                        }
+                                </ul>
 
-                                    </ul>
+                            </div>
 
-                                </div>
-
-                            `
-
-                            : "";
+                        `
+                        : "";
 
 
-                    /* ================= RESULT UI ================= */
+                    /* Result */
 
                     aiResult.innerHTML = `
 
@@ -1536,33 +1770,39 @@
                         </h3>
 
 
-                        <div class="result-section">
+                        <div
+                            class="result-section"
+                        >
 
-
-                            <p class="result-label">
-
+                            <p
+                                class="result-label"
+                            >
                                 CROP
-
                             </p>
 
 
-                            <div class="crop-badge">
+                            <div
+                                class="crop-badge"
+                            >
 
-                                🌿 ${escapeHTML(
+                                🌿
+                                ${escapeHTML(
                                     crop
                                 )}
 
                             </div>
 
 
-                            <p class="result-label">
-
+                            <p
+                                class="result-label"
+                            >
                                 DETECTED CONDITION
-
                             </p>
 
 
-                            <h2 class="result-disease">
+                            <h2
+                                class="result-disease"
+                            >
 
                                 ${escapeHTML(
                                     formatDiseaseName(
@@ -1573,17 +1813,19 @@
                             </h2>
 
 
-                            <p class="result-label">
-
+                            <p
+                                class="result-label"
+                            >
                                 AI CONFIDENCE
-
                             </p>
 
 
-                            <h2 class="confidence-value">
+                            <h2
+                                class="confidence-value"
+                            >
 
-                                ${confidence.toFixed(
-                                    2
+                                ${escapeHTML(
+                                    confidence
                                 )}%
 
                             </h2>
@@ -1610,14 +1852,17 @@
                             </div>
 
 
-                            <p class="health-status">
+                            <p
+                                class="health-status"
+                            >
 
                                 ${healthIcon}
 
-                                ${healthStatus}
+                                ${escapeHTML(
+                                    status
+                                )}
 
                             </p>
-
 
                         </div>
 
@@ -1628,16 +1873,22 @@
                         ${recommendationsHTML}
 
 
-                        <div class="disclaimer">
+                        <div
+                            class="disclaimer"
+                        >
 
                             ⚠️ <strong>Important:</strong>
 
-                            This AI result is a screening
-                            aid based on the uploaded image.
-                            It is not a guaranteed diagnosis.
+                            This AI result is a
+                            screening aid based on
+                            the uploaded image.
 
-                            For important crop-health decisions,
-                            consider confirmation from a
+                            It is not a guaranteed
+                            diagnosis.
+
+                            For important crop-health
+                            decisions, consider
+                            confirmation from a
                             local agriculture expert.
 
                         </div>
@@ -1655,10 +1906,7 @@
                     `;
 
 
-                }
-
-
-                catch (error) {
+                } catch (error) {
 
 
                     console.error(
@@ -1669,10 +1917,10 @@
 
                     aiResult.innerHTML = `
 
-                        <div class="result-icon">
-
+                        <div
+                            class="result-icon"
+                        >
                             ❌
-
                         </div>
 
 
@@ -1714,323 +1962,27 @@
         );
 
 
-        /* ================= FORMAT DISEASE ================= */
-
-        function formatDiseaseName(
-            disease
-        ) {
-
-            return String(disease)
-
-                .replaceAll(
-                    "___",
-                    " - "
-                )
-
-                .replaceAll(
-                    "_",
-                    " "
-                )
-
-                .replace(
-                    /\s+/g,
-                    " "
-                )
-
-                .trim();
-
-        }
-
-
-        /* ================= ESCAPE HTML ================= */
-
-        function escapeHTML(
-            value
-        ) {
-
-            return String(value)
-
-                .replaceAll(
-                    "&",
-                    "&amp;"
-                )
-
-                .replaceAll(
-                    "<",
-                    "&lt;"
-                )
-
-                .replaceAll(
-                    ">",
-                    "&gt;"
-                )
-
-                .replaceAll(
-                    '"',
-                    "&quot;"
-                )
-
-                .replaceAll(
-                    "'",
-                    "&#039;"
-                );
-
-        }
-
-
-        /* ================= SAVE HISTORY ================= */
-
-        function savePredictionHistory(
-            crop,
-            disease,
-            confidence,
-            status
-        ) {
-
-
-            const history =
-                JSON.parse(
-                    localStorage.getItem(
-                        "agrivision_history"
-                    ) || "[]"
-                );
-
-
-            const record = {
-
-                crop:
-                    String(crop),
-
-                disease:
-                    formatDiseaseName(
-                        disease
-                    ),
-
-                confidence:
-                    Number(
-                        confidence
-                    ).toFixed(2),
-
-                status:
-                    String(status),
-
-                date:
-                    new Date()
-                        .toLocaleString()
-
-            };
-
-
-            history.unshift(
-                record
-            );
-
-
-            const limitedHistory =
-                history.slice(
-                    0,
-                    10
-                );
-
-
-            localStorage.setItem(
-                "agrivision_history",
-                JSON.stringify(
-                    limitedHistory
-                )
-            );
-
-
-            displayHistory();
-
-        }
-
-
-        /* ================= DISPLAY HISTORY ================= */
-
-        function displayHistory() {
-
-
-            const historyList =
-                document.getElementById(
-                    "historyList"
-                );
-
-
-            if (!historyList) {
-
-                return;
-
-            }
-
-
-            const history =
-                JSON.parse(
-                    localStorage.getItem(
-                        "agrivision_history"
-                    ) || "[]"
-                );
-
-
-            if (
-                !Array.isArray(history) ||
-                history.length === 0
-            ) {
-
-
-                historyList.innerHTML = `
-
-                    <div class="empty-history">
-
-                        🌱
-
-                        <br><br>
-
-                        No predictions yet.
-
-                        <br><br>
-
-                        Upload a plant image
-                        to create your first analysis.
-
-                    </div>
-
-                `;
-
-
-                return;
-
-            }
-
-
-            historyList.innerHTML =
-                history
-                    .map(
-                        item => `
-
-                            <div
-                                class="history-item"
-                            >
-
-                                <div
-                                    class="history-top"
-                                >
-
-                                    <div>
-
-                                        <div
-                                            class="history-crop"
-                                        >
-
-                                            🌿
-
-                                            ${escapeHTML(
-                                                item.crop
-                                            )}
-
-                                        </div>
-
-
-                                        <div
-                                            class="history-disease"
-                                        >
-
-                                            ${escapeHTML(
-                                                item.disease
-                                            )}
-
-                                        </div>
-
-                                    </div>
-
-
-                                    <div>
-
-                                        <div
-                                            class="history-confidence"
-                                        >
-
-                                            ${escapeHTML(
-                                                item.confidence
-                                            )}%
-
-                                        </div>
-
-
-                                        <div
-                                            class="history-status"
-                                        >
-
-                                            ${escapeHTML(
-                                                item.status
-                                            )}
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div
-                                    class="history-date"
-                                >
-
-                                    🕒
-
-                                    ${escapeHTML(
-                                        item.date
-                                    )}
-
-                                </div>
-
-                            </div>
-
-                        `
-                    )
-                    .join("");
-
-        }
-
-
-        /* ================= CLEAR HISTORY ================= */
-
-        function clearHistory() {
-
-
-            localStorage.removeItem(
-                "agrivision_history"
-            );
-
-
-            displayHistory();
-
-        }
-
-
-        /* ================= RESET ================= */
+        /* ==========================================
+           RESET
+        ========================================== */
 
         function resetAnalysis() {
 
-
-            leafImage.value =
-                "";
-
+            leafImage.value = "";
 
             aiResult.style.display =
                 "none";
 
-
-            aiResult.innerHTML =
-                "";
+            aiResult.innerHTML = "";
 
         }
 
 
-        /* ================= LOAD HISTORY ================= */
+        /* ==========================================
+           LOAD HISTORY
+        ========================================== */
 
         displayHistory();
-
 
     </script>
 
